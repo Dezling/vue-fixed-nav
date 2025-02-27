@@ -4,7 +4,7 @@ export const news = [
     title: "📢 Announcement of the Upcoming Project Meeting",
     date: "2025-02-27",
     author: "GDCAU Admins",
-    // image: "/src/assets/news-covers/news1.jpg",
+    // image: "/images/news-covers/news1.jpg",
     content: `<p>📅 Date: March 5, 2025</p>
     <p>⏰ Time: 16:30–18:00 (UTC+5) / 12:30–14:00 (CET)</p>
     <p>📍 Platform: Google Meet (link sent via email)</p>
@@ -20,6 +20,6 @@ export const news = [
                 
 
               </ul>`,
-    excerpt: "The meeting agenda includes the following topics..."
+    excerpt: "📅 Date: March 5, 2025⏰ Time: 16:30–18:00 (UTC+5) / 12:30–14:00 (CET)📍 Platform: Google Meet (link sent via email)"
   }
 ]
