@@ -336,7 +336,6 @@ const showPrivacyModal = () => {
 .responsive-image {
   max-width: 100%;
   height: auto;
-  filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
 
