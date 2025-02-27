@@ -5,10 +5,14 @@
   <div class="hero-content">
     <h2 class="hero-subtitle">GDCAU</h2>
     <h1 class="hero-title">
+      
       <span class="title-line">GREEN DEAL</span>
       <span class="title-line">CENTRAL ASIAN UNIVERSITIES</span>
     </h1>
   </div>
+  <div class="erasmus-logo">
+  <img src="/images/euro8.png" alt="Erasmus+">
+</div>
 </section>
 
 
@@ -177,6 +181,45 @@ const showPrivacyModal = () => {
 }
 
 /* Hero Section */
+.hero-section {
+  position: relative; /* Добавляем для позиционирования логотипа */
+}
+
+.erasmus-logo {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0;
+  animation: fadeInLogo 1s ease forwards 1s;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.erasmus-logo img {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transition: all 0.3s ease;
+}
+
+.erasmus-logo:hover {
+  transform: translateY(-5px);
+}
+
+.erasmus-logo:hover img {
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
 .hero-section {
   min-height: 90vh;
   display: flex;
