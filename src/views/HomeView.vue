@@ -2,6 +2,9 @@
   <main class="home-page">
     <!-- Section 1: Hero Image -->
 <section class="hero-section">
+    <div class="erasmus-logo">
+    <img src="/images/euro8.png" alt="Erasmus+">
+  </div>
   <div class="hero-content">
     <h2 class="hero-subtitle">GDCAU</h2>
     <h1 class="hero-title">
@@ -10,9 +13,7 @@
       <span class="title-line">CENTRAL ASIAN UNIVERSITIES</span>
     </h1>
   </div>
-  <div class="erasmus-logo">
-  <img src="/images/euro8.png" alt="Erasmus+">
-</div>
+
 </section>
 
 
@@ -187,27 +188,28 @@ const showPrivacyModal = () => {
 
 .erasmus-logo {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  top: 2rem;
+  left: 2rem;
   opacity: 0;
-  animation: fadeInLogo 1s ease forwards 1s;
-  z-index: 2;
+  animation: fadeInLogo 1s ease forwards 0.5s;
+  z-index: 10;
   transition: all 0.3s ease;
+  transform-origin: left top;
 }
 
 .erasmus-logo img {
-  width: 120px;
+  width: 180px; /* Увеличил размер */
   height: auto;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
   transition: all 0.3s ease;
 }
 
 .erasmus-logo:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05) rotate(-2deg);
 }
 
 .erasmus-logo:hover img {
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
 }
 
 @keyframes fadeInLogo {
@@ -622,6 +624,14 @@ const showPrivacyModal = () => {
   .hero-subtitle {
     font-size: 1.2rem;
   }
+    .erasmus-logo {
+    top: 1rem;
+    left: 1rem;
+  }
+  .erasmus-logo img {
+    width: 100px;
+  }
+}
   
   .title-line {
     font-size: 2.5rem;
@@ -635,7 +645,7 @@ const showPrivacyModal = () => {
   .objective-item {
     padding: 1.5rem;
   }
-}
+
 .section-title {
     font-size: 3rem; /* Увеличено с 1.5rem до 3rem */
 }
@@ -644,6 +654,7 @@ const showPrivacyModal = () => {
   .title-line {
     font-size: 2rem;
   }
+  
   
   .description-text {
     font-size: 1rem;
