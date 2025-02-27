@@ -2,7 +2,7 @@
   <div class="news-page">
     <AppNavbar />
     <div class="news-content" v-if="!selectedNews">
-      <h1 class="news-title">All News</h1>
+      <h1 class="news-title">All News And Events</h1>
       <div class="news-list">
         <article
           v-for="item in news"

@@ -53,7 +53,7 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
     <!-- Section 5: Latest News -->
     <section class="section news">
       <div class="responsive-container">
-        <h2 class="section-title">LATEST NEWS</h2>
+        <h2 class="section-title">LATEST NEWS AND EVENTS</h2>
         <div class="news-grid">
           <article 
             v-for="(item, index) in news" 
@@ -123,22 +123,22 @@ import { news } from '../data/news' // Убедитесь, что правиль
 const router = useRouter()
 
 const openNews = (item) => {
-  router.push({ name: 'News', params: { id: item.id } })
+  router.push({ name: 'News And Events', params: { id: item.id } })
 }
 const universities = ref([
-  { name: 'University 1', logo: '/src/assets/universitets/u1.png', url: 'https://tttu.edu.kz/ru/universitet/' },
-  { name: 'University 2', logo: '/src/assets/universitets/u2.png', url: 'https://khogu.tj/ru/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f/' },
-  { name: 'University 3', logo: '/src/assets/universitets/u3.png', url: 'https://kiut.uz/ru/' },
-  { name: 'University 4', logo: '/src/assets/universitets/u4.png', url: 'https://www.donau-uni.ac.at/de.html' },
-  { name: 'University 5', logo: '/src/assets/universitets/u5.png', url: 'https://etu.edu.kz/' },
-  { name: 'University 6', logo: '/src/assets/universitets/u6.png', url: '#' },
-  { name: 'University 7', logo: '/src/assets/universitets/u7.png', url: 'https://bhu.kg/' },
-  { name: 'University 8', logo: '/src/assets/universitets/u8.png', url: 'https://constructor.university/' },
-  { name: 'University 9', logo: '/src/assets/universitets/u9.png', url: '#' },
-  { name: 'University 10', logo: '/src/assets/universitets/u10.png', url: '#' },
-  { name: 'University 11', logo: '/src/assets/universitets/u11.png', url: '#' },
-  { name: 'University 12', logo: '/src/assets/universitets/u12.png', url: '#' },
-  { name: 'University 13', logo: '/src/assets/universitets/u13.png', url: '#' },
+  { name: 'University 1', logo: '/images/universitets/u1.png', url: 'https://tttu.edu.kz/ru/universitet/' },
+  { name: 'University 2', logo: '/images/universitets/u2.png', url: 'https://khogu.tj/ru/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f/' },
+  { name: 'University 3', logo: '/images/universitets/u3.png', url: 'https://kiut.uz/ru/' },
+  { name: 'University 4', logo: '/images/universitets/u4.png', url: 'https://www.donau-uni.ac.at/de.html' },
+  { name: 'University 5', logo: '/images/universitets/u5.png', url: 'https://etu.edu.kz/' },
+  { name: 'University 6', logo: '/images/universitets/u6.png', url: '#' },
+  { name: 'University 7', logo: '/images/universitets/u7.png', url: 'https://bhu.kg/' },
+  { name: 'University 8', logo: '/images/universitets/u8.png', url: 'https://constructor.university/' },
+  { name: 'University 9', logo: '/images/universitets/u9.png', url: '#' },
+  { name: 'University 10', logo: '/images/universitets/u10.png', url: '#' },
+  { name: 'University 11', logo: '/images/universitets/u11.png', url: '#' },
+  { name: 'University 12', logo: '/images/universitets/u12.png', url: '#' },
+  { name: 'University 13', logo: '/images/universitets/u13.png', url: '#' },
   // Добавьте остальные университеты
 ])
 
@@ -151,11 +151,11 @@ const objectives = ref([
 
 
 const socialMedia = ref([
-  { name: 'Facebook', icon: '/src/assets/social/facebook.png', link: '#' },
-  { name: 'Telegram', icon: '/src/assets/social/telegram.png', link: 'https://t.me/greendealcau' },
-  { name: 'Instagram', icon: '/src/assets/social/instagram.png', link: 'https://www.instagram.com/greendealcau?igsh=MTVmNmo4d3NoYzdqOA==' },
-  { name: 'linkedin', icon: '/src/assets/social/linkedin.png', link: 'https://t.me/greendealcau' },
-  { name: 'tiktok', icon: '/src/assets/social/tttt.png', link: 'https://www.tiktok.com/@greendeal_cau?_t=ZM-8uF1ZqiwkuE&_r=1' },
+  { name: 'Facebook', icon: '/images/social/facebook.png', link: '#' },
+  { name: 'Telegram', icon: '/images/social/telegram.png', link: 'https://t.me/greendealcau' },
+  { name: 'Instagram', icon: '/images/social/instagram.png', link: 'https://www.instagram.com/greendealcau?igsh=MTVmNmo4d3NoYzdqOA==' },
+  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://t.me/greendealcau' },
+  { name: 'tiktok', icon: '/images/social/tttt.png', link: 'https://www.tiktok.com/@greendeal_cau?_t=ZM-8uF1ZqiwkuE&_r=1' },
 
   // Добавьте другие соцсети
 ])

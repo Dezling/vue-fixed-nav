@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '/src/views/HomeView.vue'
 
 export const routes = [ // Добавьте 'export' перед 'const routes'
   { path: '/', name: 'Main Page', component: HomeView },
   { path: '/about', name: 'About Project', component: () => import('../views/AboutView.vue') },
   { path: '/contact', name: '', component: () => import('../views/ContactView.vue') },
-  { path: '/news/:id',name: 'News',component: () => import('../views/NewsView.vue'),props:true},
+  { path: '/news/:id',name: 'News And Events',component: () => import('../views/NewsView.vue'),props:true},
 
 ]
 import { onMounted, ref } from 'vue'
