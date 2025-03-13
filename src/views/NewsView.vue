@@ -2,20 +2,9 @@
   <div class="news-page">
     <AppNavbar />
     <div class="news-content" v-if="!selectedNews">
-      <h1 class="news-title">All News And Events</h1>
-      <div class="news-list">
-        <article
-          v-for="item in news"
-          :key="item.id"
-          class="news-card"
-          @click="viewNews(item)"
-        >
-          <h3 class="news-title">{{ item.title }}</h3>
-          <div class="news-date">{{ item.date }}</div>
-          <p class="news-excerpt">{{ item.excerpt }}</p>
-        </article>
-      </div>
+      <!-- ... existing news list code ... -->
     </div>
+
     <div class="news-detail" v-if="selectedNews">
       <button class="back-button" @click="goBack">← Back </button>
       
@@ -24,15 +13,27 @@
         <span class="news-date">{{ formattedDate }}</span>
         <span class="news-author">{{ selectedNews.author }}</span>
       </div>
-      
-      <img 
-        v-if="selectedNews.image" 
-        :src="selectedNews.image" 
-        alt="News cover" 
-        class="news-cover"
-      >
-      
+
+      <div class="image-scroll-container" v-if="selectedNews.images?.length">
+        <div class="image-scroll-wrapper">
+          <img 
+            v-for="(image, index) in selectedNews.images" 
+            :key="index"
+            :src="image" 
+            @click="openLightbox(image)"
+            :alt="'News image ' + (index + 1)"
+            class="news-image"
+          >
+        </div>
+      </div>
+
       <div class="news-body" v-html="selectedNews.content"></div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div v-if="selectedImage" class="lightbox" @click.self="closeLightbox">
+      <button class="close-button" @click="closeLightbox">×</button>
+      <img :src="selectedImage" class="lightbox-image" />
     </div>
   </div>
 </template>
@@ -68,8 +69,21 @@ const formattedDate = computed(() => {
     day: 'numeric'
   }) : ''
 });
+
+const selectedImage = ref(null)
+
+const openLightbox = (image) => {
+  selectedImage.value = image
+  document.body.style.overflow = 'hidden'
+}
+
+const closeLightbox = () => {
+  selectedImage.value = null
+  document.body.style.overflow = 'auto'
+}
 </script>
 <style scoped>
+
 .news-page {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   max-width: 1440px;
@@ -77,7 +91,41 @@ const formattedDate = computed(() => {
   padding: 0 2rem;
   min-height: 100vh;
 }
+.image-scroll-container {
+  margin: 2rem 0;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
 
+.image-scroll-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  min-width: min-content;
+}
+
+.news-image {
+  height: 300px;
+  width: auto;
+  max-width: 80%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.news-image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .news-image {
+    height: 250px;
+    max-width: 90%;
+  }
+}
 .news-content {
   position: relative;
   padding: 4rem 0;
@@ -292,6 +340,115 @@ const formattedDate = computed(() => {
   
   .news-card {
     padding: 1.5rem;
+  }
+}
+/* Custom Scrollbar */
+.image-scroll-container::-webkit-scrollbar {
+  height: 8px;
+  background-color: #f5f5f5;
+}
+
+.image-scroll-container::-webkit-scrollbar-thumb {
+  background: #2a7d2e;
+  border-radius: 10px;
+}
+
+.image-scroll-container::-webkit-scrollbar-track {
+  background: #e8f5e9;
+}
+
+.image-scroll-container {
+  margin: 2rem 0;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-color: #2a7d2e #e8f5e9;
+  scrollbar-width: thin;
+}
+
+.image-scroll-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  min-width: min-content;
+}
+
+.news-image {
+  height: 350px;
+  width: auto;
+  max-width: 80%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: zoom-in;
+  flex-shrink: 0;
+}
+
+.news-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Lightbox Styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+.close-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-button:hover {
+  transform: rotate(90deg);
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .news-image {
+    height: 280px;
+    max-width: 85%;
+  }
+  
+  .lightbox-image {
+    max-width: 95%;
+  }
+  
+  .close-button {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
   }
 }
 </style>
