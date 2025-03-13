@@ -30,12 +30,16 @@ export const news = [
     // image: "/images/news-covers/news1.jpg",
     content: `
     <p>The Green Energy Challenge: Reducing Consumption and Transitioning to Renewable Sources</p>
-    <li>On March 06, 2025, «Energy» chair organized an event on the theme "The challenge of green energy: reducing consumption and switching to renewable sources." 
-On March 6, 2025, the Department of "Energy" organized an event on the topic "The Green Energy Challenge: Reducing Consumption and Transitioning to Renewable Sources." During the event, faculty members and students presented their projects aimed at improving energy efficiency and implementing renewable energy sources.
-Alexander Onishchenko, a student of the Thermal power engineering of industrial enterprises and housing and communal facilities-22 group, made a presentation on "Green technologies in Karaganda region". Andrey Pavlov, a student of the power supply of industrial facilities-23 group, presented a project dedicated to saving electricity in lighting systems. Beibarys Nursha, a student of the power supply of industrial facilities-23k group, presented the Green Kilowatt project at Zhailau. Arapov Usen, a student of the Automation systems engineering-23 group, acquainted the audience with the real project implemented in the KarIU educational process in the 222 auditorium of the main building. Computers are powered by solar panels. Arapov U. presented his report. He 
-The event ended with a report by O.N. Onishchenko, Senior Lecturer at the Energy» chair, on the prospects for the development of unconventional renewable energy in the Republic of Kazakhstan
-</li>
-    `,
+    <ul>
+        <li>On March 06, 2025, the «Energy» chair organized an event on the theme "The challenge of green energy: reducing consumption and switching to renewable sources." 
+        During the event, faculty members and students presented their projects aimed at improving energy efficiency and implementing renewable energy sources.</li>
+        <li>Alexander Onishchenko, a student of the Thermal power engineering of industrial enterprises and housing and communal facilities-22 group, made a presentation on "Green technologies in Karaganda region".</li>
+        <li>Andrey Pavlov, a student of the power supply of industrial facilities-23 group, presented a project dedicated to saving electricity in lighting systems.</li>
+        <li>Beibarys Nursha, a student of the power supply of industrial facilities-23k group, presented the Green Kilowatt project at Zhailau.</li>
+        <li>Arapov Usen, a student of the Automation systems engineering-23 group, acquainted the audience with the real project implemented in the KarIU educational process in the 222 auditorium of the main building. Computers are powered by solar panels.</li>
+        <li>The event ended with a report by O.N. Onishchenko, Senior Lecturer at the Energy» chair, on the prospects for the development of unconventional renewable energy in the Republic of Kazakhstan.</li>
+    </ul>
+`,
     excerpt: 'On March 06, 2025, «Energy» chair organized an event on the theme "The challenge of green energy: reducing consumption and switching to renewable sources."'
   },
   
