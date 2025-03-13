@@ -1,0 +1,218 @@
+openapi: 3.0.0
+info:
+  title: Development API
+  description: API для управления новостями и университетами.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/api
+paths:
+  /news:
+    get:
+      summary: Получить все новости
+      responses:
+        '200':
+          description: Успешный ответ с массивом новостей
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/News'
+    post:
+      summary: Создать новую новость
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/News'
+      responses:
+        '201':
+          description: Новость успешно создана
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+
+  /news/{id}:
+    get:
+      summary: Получить новость по ID
+      parameters:
+        - name: id
+          in: path
+          description: ID новости
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Успешный ответ с новостью
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+        '404':
+          description: Новость не найдена
+    put:
+      summary: Обновить новость по ID
+      parameters:
+        - name: id
+          in: path
+          description: ID новости
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/News'
+      responses:
+        '200':
+          description: Новость успешно обновлена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+        '404':
+          description: Новость не найдена
+    delete:
+      summary: Удалить новость по ID
+      parameters:
+        - name: id
+          in: path
+          description: ID новости
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Новость успешно удалена
+        '404':
+          description: Новость не найдена
+
+  /universities:
+    get:
+      summary: Получить все университеты
+      responses:
+        '200':
+          description: Успешный ответ с массивом университетов
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/University'
+    post:
+      summary: Создать новый университет
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/University'
+      responses:
+        '201':
+          description: Университет успешно создан
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/University'
+
+  /universities/{id}:
+    get:
+      summary: Получить университет по ID
+      parameters:
+        - name: id
+          in: path
+          description: ID университета
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Успешный ответ с университетом
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/University'
+        '404':
+          description: Университет не найден
+    put:
+      summary: Обновить университет по ID
+      parameters:
+        - name: id
+          in: path
+          description: ID университета
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/University'
+      responses:
+        '200':
+          description: Университет успешно обновлён
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/University'
+        '404':
+          description: Университет не найден
+    delete:
+      summary: Удалить университет по ID
+      parameters:
+        - name: id
+          in: path
+          description: ID университета
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Университет успешно удалён
+        '404':
+          description: Университет не найден
+
+components:
+  schemas:
+    News:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        excerpt:
+          type: string
+        content:
+          type: string
+        date:
+          type: string
+          format: date
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - title
+        - content
+    University:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        logoUrl:
+          type: string
+        websiteUrl:
+          type: string
+        country:
+          type: string
+      required:
+        - name
+        - country
