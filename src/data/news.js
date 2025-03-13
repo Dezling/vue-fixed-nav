@@ -1,9 +1,10 @@
 export const news = [
+
   {
-    id: 2,
-    title: "The Green Energy Challenge...",
+    id: 3,
+    title: "🌍 The Green Energy Challenge",
     date: "2025-03-13",
-    author: "GDCAU Admins",
+    author: "GDCAU Coordination Team",
     images: [ // Заменяем multiple image на массив images
       "/images/news-covers/1.jpeg",
       "/images/news-covers/2.jpeg",
@@ -21,6 +22,70 @@ The event ended with a report by O.N. Onishchenko, Senior Lecturer at the Energy
     `,
     excerpt: 'On March 06, 2025, «Energy» chair organized an event on the theme "The challenge of green energy: reducing consumption and switching to renewable sources..."'
   },
+  {
+  id: 2,
+  title: "🌿 Project Meeting: Key Decisions & Action Plan",
+  date: "2025-03-05",
+  author: "GDCAU Coordination Team",
+  images: [
+    "/images/news-covers/6.jpeg",
+    "/images/news-covers/7.jpeg",
+    "/images/news-covers/8.jpeg"
+  ],
+  content: `
+    <h2>Project Group Meeting - March 5, 2025</h2>
+    <p>🌐 <em>Online via Google Meet</em></p>
+    
+    <p>Partner universities and organizations convened to advance the Green Deal CAU initiative.</p>
+
+    <h3>📋 Key Discussions and Decisions</h3>
+    
+    <h4>✅ Project Plan (Road Map) – ETU</h4>
+    <ul>
+      <li>Draft Road Map reviewed with key milestones</li>
+      <li>Final version expected by <strong>May 2025</strong></li>
+      <li>Action plans submission deadline: <strong>March 31</strong></li>
+    </ul>
+
+    <h4>✅ Dissemination Plan – KarIU & BSU</h4>
+    <ul>
+      <li>Focus on social media: Instagram, LinkedIn, Facebook</li>
+      <li>Dedicated project website development</li>
+      <li>Industry collaboration events planned</li>
+    </ul>
+
+    <h4>✅ Project Logo – KarIU & BSU, ETU</h4>
+    <ul>
+      <li>Official branding approved</li>
+      <li>Shared drive with assets created</li>
+      <li>Marketing templates in development</li>
+    </ul>
+
+    <h4>✅ Green Deal Center (GDC) – TIIAME & UCA</h4>
+    <ul>
+      <li>1 main hub + 9 satellite centers</li>
+      <li>Interactive activity tracking website</li>
+      <li>Student engagement programs outlined</li>
+    </ul>
+
+    <hr>
+
+    <h3>📅 Action Plan Timeline</h3>
+    
+    <ul>
+      <li>📌 <strong>March 14</strong> - WP leads prepare requirements list</li>
+      <li>📌 <strong>March 31</strong> - Submit university action plans</li>
+      <li>📌 <strong>April 11</strong> - Review and consolidate plans</li>
+      <li>📌 <strong>April 30</strong> - Final project plan approval</li>
+      <li>📌 <strong>May 12</strong> - Progress report at Bremen meeting</li>
+    </ul>
+
+    <blockquote>
+      <p>The meeting established clear implementation milestones and strengthened collaboration between all partners.</p>
+    </blockquote>
+  `,
+  excerpt: "March 5, 2025 - Partners agreed on project roadmap, dissemination strategy, and Green Deal Centers structure during key online meeting."
+},
   {
     id: 1,
     title: "📢 Announcement of the Upcoming Project Meeting",
