@@ -2,7 +2,20 @@
   <div class="news-page">
     <AppNavbar />
     <div class="news-content" v-if="!selectedNews">
-      <!-- ... existing news list code ... -->
+      <!-- Добавленный блок списка новостей -->
+      <h1 class="news-title">News & Events</h1>
+      <div class="news-list">
+        <div 
+          v-for="(item, index) in news" 
+          :key="index"
+          class="news-card"
+          @click="viewNews(item)"
+        >
+          <h3>{{ item.title }}</h3>
+          <div class="news-date">{{ new Date(item.date).toLocaleDateString() }}</div>
+          <p class="news-excerpt">{{ item.excerpt }}</p>
+        </div>
+      </div>
     </div>
 
     <div class="news-detail" v-if="selectedNews">
