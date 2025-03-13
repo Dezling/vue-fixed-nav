@@ -144,6 +144,8 @@ const universities = ref([
   { name: 'University 11', logo: '/images/universitets/u11.png', url: '#' },
   { name: 'University 12', logo: '/images/universitets/u12.png', url: '#' },
   { name: 'University 13', logo: '/images/universitets/u13.png', url: '#' },
+  { name: 'University 14', logo: '/images/universitets/u14.png', url: '#' },
+
   // Добавьте остальные университеты
 ])
 
