@@ -1,10 +1,7 @@
 <template>
   <main class="home-page">
-    <!-- Section 1: Hero Image -->
 <section class="hero-section">
-    <div class="erasmus-logo">
-    <img src="/images/euro8.png" alt="Erasmus+">
-  </div>
+  
   <div class="hero-content">
     <h2 class="hero-subtitle">GDCAU</h2>
     <h1 class="hero-title">
@@ -17,7 +14,6 @@
 </section>
 
 
-    <!-- Section 2: Project Description -->
     <section class="section project-description">
       <div class="responsive-container">
         <h2 class="section-title">BRIEF DESCRIPTON OF THE PROJECT</h2>
@@ -27,7 +23,6 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
       </div>
     </section>
 
-    <!-- Section 3: Participants -->
     <section class="section participants">
       <div class="responsive-container">
         <h2 class="section-title">PARTICIPANTS</h2>
@@ -43,7 +38,6 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
       </div>
     </section>
 
-    <!-- Section 4: Strategic Objectives -->
     <section class="section objectives">
       <div class="responsive-container">
         <h2 class="section-title">STRATEGIC OBJECTIVES OF THE PROJECT</h2>
@@ -55,7 +49,6 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
       </div>
     </section>
 
-    <!-- Section 5: Latest News -->
     <section class="section news">
       <div class="responsive-container">
         <h2 class="section-title">LATEST NEWS AND EVENTS</h2>
@@ -74,55 +67,16 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
       </div>
     </section>
 
-    <!-- Section 6: Footer -->
-<footer class="main-footer">
-    <div class="responsive-container footer-content">
-      <div class="footer-disclaimer">
-        © 2025 GDCAU. All rights reserved. | 
-        <a href="#" class="footer-link" @click.prevent="showPrivacyModal">Disclamer</a>
-      </div>
-      <div class="social-links">
-        <a 
-          v-for="(social, index) in socialMedia" 
-          :key="index" 
-          :href="social.link"
-          class="social-icon"
-          target="_blank"
-          rel="noopener"
-        >
-          <img 
-            :src="social.icon" 
-            :alt="social.name" 
-            class="icon-image"
-            :style="{ width: social.size || '32px' }"
-          >
-        </a>
-      </div>
-    </div>
-  </footer>
+
     <div v-if="showModal" class="privacy-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Disclamer</h2>
-        <button class="close-button" @click="showModal = false">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p>This website and its contents are provided for informational and educational purposes only. We strive to ensure the accuracy and timeliness of the information presented, but we do not guarantee its completeness or applicability to your specific circumstances. Use of this website is at your own risk.
-
-We are not liable for any errors, omissions, or decisions made based on the information provided here. Links to third-party websites are provided for convenience and do not imply endorsement or responsibility for the content of those sites.
-
-For personalized advice or recommendations, please consult a qualified professional.</p>
-        <!-- Добавьте полный текст политики здесь -->
-      </div>
     </div>
-  </div>
   </main>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { news } from '../data/news' // Убедитесь, что правильный путь к файлу с новостями
+import { news } from '../data/news'
 
 
 const router = useRouter()
@@ -146,7 +100,6 @@ const universities = ref([
   { name: 'University 13', logo: '/images/universitets/u13.png', url: '#' },
   { name: 'University 14', logo: '/images/universitets/u14.png', url: '#' },
 
-  // Добавьте остальные университеты
 ])
 
 const objectives = ref([
@@ -164,7 +117,6 @@ const socialMedia = ref([
   { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://t.me/greendealcau' },
   { name: 'tiktok', icon: '/images/social/tttt.png', link: 'https://www.tiktok.com/@greendeal_cau?_t=ZM-8uF1ZqiwkuE&_r=1' },
 
-  // Добавьте другие соцсети
 ])
 
 const showModal = ref(false)
@@ -179,13 +131,12 @@ const showPrivacyModal = () => {
   background: #f8fafc;
 }
 .section {
-  padding: 3rem 0; /* Было 5rem */
+  padding: 3rem 0; 
   position: relative;
 }
 
-/* Hero Section */
 .hero-section {
-  position: relative; /* Добавляем для позиционирования логотипа */
+  position: relative; 
 }
 
 .erasmus-logo {
@@ -200,7 +151,7 @@ const showPrivacyModal = () => {
 }
 
 .erasmus-logo img {
-  width: 180px; /* Увеличил размер */
+  width: 180px; 
   height: auto;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
   transition: all 0.3s ease;
@@ -280,7 +231,6 @@ const showPrivacyModal = () => {
 .title-line:nth-child(1) { animation-delay: 0.3s; }
 .title-line:nth-child(2) { animation-delay: 0.6s; }
 
-/* Project Description */
 .project-description {
 	margin-top: -1rem;
   background: linear-gradient(45deg, #f8fff8, #ffffff);
@@ -301,7 +251,6 @@ const showPrivacyModal = () => {
   box-shadow: 0 8px 32px rgba(34, 140, 61, 0.1);
 }
 
-/* Participants Section */
 .participants {
   padding: 6rem 0;
   background: #ffffff;
@@ -347,7 +296,6 @@ const showPrivacyModal = () => {
   filter: grayscale(0%);
 }
 
-/* Objectives Section */
 .objectives {
   padding: 6rem 0;
   background: #f0fdf4;
@@ -392,7 +340,6 @@ const showPrivacyModal = () => {
   transform: translateY(-5px);
 }
 
-/* News Section */
 .news {
   padding: 6rem 0;
   background: white;
@@ -472,48 +419,7 @@ const showPrivacyModal = () => {
   overflow: hidden;
 }
 
-/* Footer */
-.main-footer {
-  background: #228c3d;
-  color: white;
-  padding: 4rem 0;
-  margin-top: 6rem;
-  position: relative;
-}
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.social-icon {
-  transition: all 0.3s ease;
-  padding: 12px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.social-icon:hover {
-  background: #1a1a1a;
-  transform: translateY(-3px);
-}
-
-.icon-image {
-  width: 28px;
-  height: 28px;
-  filter: brightness(0) invert(1);
-}
-
-/* Анимации */
 @keyframes slideUp {
   from {
     transform: translateY(20px);
@@ -538,7 +444,6 @@ const showPrivacyModal = () => {
 .section-title{
   color: #2a7d2e;
 }
-/* Стили для модального окна */
 .privacy-modal {
   position: fixed;
   top: 0;
@@ -612,7 +517,6 @@ const showPrivacyModal = () => {
 .privacy-modal {
   animation: modalFade 0.3s ease;
 }
-/* Центрирование контента */
 .section-title,
 .description-text,
 .participants-intro,
@@ -650,7 +554,7 @@ const showPrivacyModal = () => {
   }
 
 .section-title {
-    font-size: 3rem; /* Увеличено с 1.5rem до 3rem */
+    font-size: 3rem; 
 }
 
 @media (max-width: 480px) {
