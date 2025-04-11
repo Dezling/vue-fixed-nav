@@ -1,6 +1,5 @@
 <template>
   <main class="about-page">
-    <!-- Section 1: Project Goals -->
     <section class="section project-goals">
       <div class="responsive-container">
         <h2 class="section-title">PROJECT GOALS</h2>
@@ -15,7 +14,6 @@
       </div>
     </section>
 
-    <!-- Section 2: Strategic Objectives -->
     <section class="section strategic-objectives">
       <div class="responsive-container">
         <h2 class="section-title">STRATEGIC OBJECTIVES</h2>
@@ -59,7 +57,6 @@
       </div>
     </section>
 
-    <!-- Section 3: Participants -->
     <section class="section participants">
       <div class="responsive-container">
         <h2 class="section-title">PARTICIPANTS</h2>
@@ -81,7 +78,6 @@
       </div>
     </section>
 
-    <!-- Section 4: Expected Results -->
     <section class="section expected-results">
       <div class="responsive-container">
         <h2 class="section-title">EXPECTED RESULTS</h2>
@@ -95,7 +91,6 @@
       </div>
     </section>
 
-    <!-- Section 5: KPIs -->
     <section class="section kpis">
       <div class="responsive-container">
         <h2 class="section-title">MAIN KPIs</h2>
@@ -114,7 +109,6 @@
 <script setup>
 import { ref } from 'vue'
 
-// Можно сюда добавить данные, если они понадобятся
 </script>
 
 <style scoped>
@@ -186,8 +180,8 @@ import { ref } from 'vue'
 }
 
 .objectives-list {
-  list-style: none; /* Убираем стандартную нумерацию */
-  padding-left: 0;  /* Убираем стандартный отступ */
+  list-style: none; 
+  padding-left: 0;  
   counter-reset: objectives;
   margin: 0 auto;
   max-width: 800px;
@@ -196,7 +190,7 @@ import { ref } from 'vue'
 .objective-item {
   counter-increment: objectives;
   background: #fff;
-  padding: 2rem 2rem 2rem 4rem; /* Добавил padding слева для текста */
+  padding: 2rem 2rem 2rem 4rem; 
   margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
@@ -206,7 +200,7 @@ import { ref } from 'vue'
 .objective-item::before {
   content: counter(objectives);
   position: absolute;
-  left: 1.5rem; /* Новое позиционирование */
+  left: 1.5rem; 
   top: 2rem;
   transform: none;
   width: 2.5rem;

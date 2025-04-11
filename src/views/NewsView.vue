@@ -2,7 +2,6 @@
   <div class="news-page">
     <AppNavbar />
     <div class="news-content" v-if="!selectedNews">
-      <!-- Добавленный блок списка новостей -->
       <h1 class="news-title">News & Events</h1>
       <div class="news-list">
         <div 
@@ -43,7 +42,6 @@
       <div class="news-body" v-html="selectedNews.content"></div>
     </div>
 
-    <!-- Lightbox Modal -->
     <div v-if="selectedImage" class="lightbox" @click.self="closeLightbox">
       <button class="close-button" @click="closeLightbox">×</button>
       <img :src="selectedImage" class="lightbox-image" />
@@ -54,27 +52,23 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { news } from '../data/news' // Путь к файлу с новостями
+import { news } from '../data/news' 
 
 const router = useRouter()
 const route = useRoute()
 
-// Состояние для выбранной новости
 const selectedNews = computed(() => {
   return news.find(item => item.id === parseInt(route.params.id)) || null
 });
 
-// Функция для отображения выбранной новости по клику
 const viewNews = (item) => {
   router.push({ params: { id: item.id } })
 }
 
-// Функция для возврата к списку новостей
 const goBack = () => {
-  window.history.back(); // Возвращает на предыдущую страницу в истории
+  window.history.back(); 
 }
 
-// Форматированная дата для выбранной новости
 const formattedDate = computed(() => {
   return selectedNews.value ? new Date(selectedNews.value.date).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -355,7 +349,6 @@ const closeLightbox = () => {
     padding: 1.5rem;
   }
 }
-/* Custom Scrollbar */
 .image-scroll-container::-webkit-scrollbar {
   height: 8px;
   background-color: #f5f5f5;
@@ -403,7 +396,6 @@ const closeLightbox = () => {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-/* Lightbox Styles */
 .lightbox {
   position: fixed;
   top: 0;
