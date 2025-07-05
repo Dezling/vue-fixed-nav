@@ -28,14 +28,26 @@
 
       <div class="image-scroll-container" v-if="selectedNews.images?.length">
         <div class="image-scroll-wrapper">
-          <img 
-            v-for="(image, index) in selectedNews.images" 
-            :key="index"
-            :src="image" 
-            @click="openLightbox(image)"
-            :alt="'News image ' + (index + 1)"
-            class="news-image"
-          >
+          <template v-for="(media, index) in selectedNews.images">
+            <img 
+              v-if="isImage(media)"
+              :key="'image-' + index"
+              :src="media" 
+              @click="openLightbox(media)"
+              :alt="'News image ' + (index + 1)"
+              class="news-image"
+            >
+            <video 
+              v-else 
+              :key="'video-' + index" 
+              controls 
+              @click="openLightbox(media)"
+              class="news-video"
+            >
+              <source :src="media" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </template>
         </div>
       </div>
 
@@ -44,7 +56,11 @@
 
     <div v-if="selectedImage" class="lightbox" @click.self="closeLightbox">
       <button class="close-button" @click="closeLightbox">×</button>
-      <img :src="selectedImage" class="lightbox-image" />
+      <img v-if="isImage(selectedImage)" :src="selectedImage" class="lightbox-image" />
+      <video v-else controls class="lightbox-video">
+        <source :src="selectedImage" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </template>
@@ -62,11 +78,11 @@ const selectedNews = computed(() => {
 });
 
 const viewNews = (item) => {
-  router.push({ params: { id: item.id } })
+  router.push(`/news/${item.id}`) 
 }
 
 const goBack = () => {
-  window.history.back(); 
+  router.push('/news');
 }
 
 const formattedDate = computed(() => {
@@ -79,8 +95,8 @@ const formattedDate = computed(() => {
 
 const selectedImage = ref(null)
 
-const openLightbox = (image) => {
-  selectedImage.value = image
+const openLightbox = (media) => {
+  selectedImage.value = media
   document.body.style.overflow = 'hidden'
 }
 
@@ -88,7 +104,13 @@ const closeLightbox = () => {
   selectedImage.value = null
   document.body.style.overflow = 'auto'
 }
+
+// Helper function to determine if the media is an image
+const isImage = (media) => {
+  return media.endsWith('.jpg') || media.endsWith('.jpeg') || media.endsWith('.png') || media.endsWith('.gif');
+}
 </script>
+
 <style scoped>
 
 .news-page {

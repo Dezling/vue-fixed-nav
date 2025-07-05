@@ -2,10 +2,6 @@
   <footer class="main-footer">
     <div class="responsive-container footer-content">
       <div class="footer-left">
-        <div class="footer-disclaimer">
-          © 2025 GDCAU. All rights reserved. | 
-          <a href="#" class="footer-link" @click.prevent="showPrivacyModal">Disclamer</a>
-        </div>
         <div class="social-links">
           <a 
             v-for="(social, index) in socialMedia" 
@@ -23,21 +19,19 @@
             >
           </a>
         </div>
+        <div class="footer-disclaimer">
+          © 2025 GDCAU. All rights reserved.
+        </div>
       </div>
       
-      <div class="erasmus-logo-footer">
-        <img src="/images/eu.jpg" alt="Erasmus+" class="erasmus-footer-img">
-      </div>
-    </div>
-
-    <div v-if="showModal" class="privacy-modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Disclamer</h2>
-          <button class="close-button" @click="showModal = false">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.</p>
+      <div class="footer-right">
+        <div class="erasmus-block">
+          <div class="erasmus-logo-footer">
+            <img src="/images/eu_52.png" alt="Erasmus+" class="erasmus-footer-img">
+          </div>
+          <div class="disclaimer-text">
+            <p>Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -48,145 +42,82 @@
 import { ref } from 'vue'
 
 const socialMedia = ref([
-  { name: 'Facebook', icon: '/images/social/facebook.png', link: '#' },
+  { name: 'Facebook', icon: '/images/social/facebook.png', link: 'https://www.facebook.com/share/18MHZ86n2o/?mibextid=wwXIfr' },
   { name: 'Telegram', icon: '/images/social/telegram.png', link: 'https://t.me/greendealcau' },
   { name: 'Instagram', icon: '/images/social/instagram.png', link: 'https://www.instagram.com/greendealcau?igsh=MTVmNmo4d3NoYzdqOA==' },
-  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://t.me/greendealcau' },
+  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://www.linkedin.com/in/green-deal-cau-64b62b365/' },
   { name: 'tiktok', icon: '/images/social/tttt.png', link: 'https://www.tiktok.com/@greendeal_cau?_t=ZM-8uF1ZqiwkuE&_r=1' },
 ])
-
-const showModal = ref(false)
-
-const showPrivacyModal = () => {
-  showModal.value = true
-}
 </script>
 
 <style scoped>
 .main-footer {
   background: #228c3d;
   color: white;
-  padding: 4rem 0;
-  margin-top: auto;
-}
-.privacy-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  backdrop-filter: blur(3px);
-}
-
-.modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 600px;
-  width: 90%;
-  max-height: 80vh;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  color: #333; 
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 1rem;
-}
-
-.modal-header h2 {
-  color: #2a7d2e;
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-.modal-body {
-  color: #444; 
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-.modal-body p {
-  margin-bottom: 1rem;
-}
-
-.close-button {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #666;
-  padding: 0 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.close-button:hover {
-  color: #2a7d2e;
+  padding: 3rem 0;
+  border-top: 4px solid #1a6b2f;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   flex: 1;
   min-width: 300px;
 }
 
+.footer-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.erasmus-block {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
 .erasmus-logo-footer {
-  opacity: 0.9;
-  transition: all 0.3s ease;
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 12px;
-}
-
-.erasmus-footer-img {
-  width: 380px;
-  height: auto;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .erasmus-logo-footer:hover {
-  opacity: 1;
   background: rgba(255, 255, 255, 0.15);
 }
 
-.erasmus-logo-footer:hover .erasmus-footer-img {
-  transform: scale(1.05);
+.erasmus-footer-img {
+  width: 320px;
+  height: auto;
 }
 
-.footer-disclaimer {
-  font-size: 0.9rem;
+.disclaimer-text {
+  font-size: 0.8rem;
   line-height: 1.5;
+  opacity: 0.9;
+}
+
+.disclaimer-text p {
+  margin: 0;
 }
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 
 .social-icon {
@@ -197,7 +128,7 @@ const showPrivacyModal = () => {
 }
 
 .social-icon:hover {
-  background: #1a1a1a;
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-3px);
 }
 
@@ -205,6 +136,11 @@ const showPrivacyModal = () => {
   width: 28px;
   height: 28px;
   filter: brightness(0) invert(1);
+}
+
+.footer-disclaimer {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
@@ -215,28 +151,28 @@ const showPrivacyModal = () => {
     gap: 2.5rem;
   }
   
-  .footer-left {
-    align-items: center;
-    order: 2;
-  }
-  
-  .erasmus-logo-footer {
-    order: 1;
+  .erasmus-block {
+    flex-direction: column;
+    text-align: center;
   }
   
   .erasmus-footer-img {
-    width: 140px;
+    width: 100px;
   }
 }
 
 @media (max-width: 480px) {
+  .disclaimer-text {
+    font-size: 0.7rem;
+  }
+  
   .footer-disclaimer {
     font-size: 0.8rem;
   }
   
   .social-links {
-    gap: 0.8rem;
+    gap: 1rem;
+    justify-content: center;
   }
 }
-
 </style>

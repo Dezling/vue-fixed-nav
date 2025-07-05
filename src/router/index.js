@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '/src/views/HomeView.vue'
 
-export const routes = [ 
+export const routes = [
   { path: '/', name: 'Main Page', component: HomeView },
-  { path: '/about', name: 'About Project', component: () => import('../views/AboutView.vue') },
+  { path: '/about', name: 'About', component: () => import('../views/AboutView.vue') },
+  { path: '/news', name: 'News & Events', component: () => import('../views/NewsView.vue') }, // Новый маршрут для списка
   { path: '/contact', name: '', component: () => import('../views/ContactView.vue') },
-  { path: '/news/:id',name: 'News And Events',component: () => import('../views/NewsView.vue'),props:true},
-
+  { path: '/green-deal-center', name: 'Green Deal Center', component: () => import('../views/GreenDealCenterView.vue') },
+  // { path: '/news', name: 'News & Events', component: () => import('../views/NewsView.vue') }, // Новый маршрут для списка
+  { path: '/news/:id', name: '', component: () => import('../views/NewsView.vue'), props: true },
+  { path: '/educational-resources', name: '', component: () => import('../views/ComingSoonView.vue') },
+  { path: '/publications', name: '', component: () => import('../views/ComingSoonView.vue') },
+  { path: '/hubs-contacts', name: '', component: () => import('../views/HubsContactsView.vue') },
 ]
 import { onMounted, ref } from 'vue'
 

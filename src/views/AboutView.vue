@@ -8,7 +8,10 @@
             The GDCAU – Green Deal for Central Asian Universities project aims to empower universities in Central Asia as key drivers of sustainable development, aligning them with the European Green Deal framework.
           </p>
           <p class="goals-summary">
-            The project focuses on developing environmentally sustainable education programs, strengthening university governance, and expanding cooperation between universities, businesses, and society.
+            The project focuses on developing and enhancing sustainability and regenerative education programs at partner universities; strengthening university ESG impact; and expanding cooperation between universities, businesses, and social actors across Eurasia.
+          </p>
+          <p class="goals-summary">
+            The project’s newly-established Green Deal Center (GDC) serves as the main communication and dissemination platform for the project, as well as a gateway and training space for partnerships between green companies, universities, NGOs, and relevant governmental ministries in the EU and Central Asia; open science initiatives; local industry green assessment and training for Green Deal transition readiness; and improving EU-Central Asia cooperation around Green Deal actions and a just transition.
           </p>
         </div>
       </div>
@@ -46,7 +49,7 @@
             </ul>
           </li>
           <li class="objective-item">
-            Establishing the Green Deal Centre for research, innovation, and public engagement
+           Establishing the Green Deal Center for Evidence-based Education, Research, Innovation and Public Outreach
             <ul>
               <li>Create a platform for research and knowledge exchange.</li>
               <li>Host events on sustainability.</li>
@@ -59,11 +62,11 @@
 
     <section class="section participants">
       <div class="responsive-container">
-        <h2 class="section-title">PARTICIPANTS</h2>
+        <h2 class="section-title">PARTNERS </h2>
         <ul class="participants-list">
           <li>1. CONSTRUCTOR UNIVERSITY BREMEN GGMBH, BREMEN, Germany, the Coordinator;</li>
           <li>2. SLOVENSKA POLNOHOSPODARSKA UNIVERZITA V NITRE, NITRA, Slovakia;</li>
-          <li>3. EURASIAN TECHNOLOGICAL, ALMATY, Kazakhstan;</li>
+          <li>3. EURASIAN TECHNOLOGICAL UNIVERSITY, ALMATY, Kazakhstan;</li>
           <li>4. KARAGANDA INDUSTRIAL UNIVERSITY, TEMIRTAU, Kazakhstan;</li>
           <li>5. UNIVERSITAT FUR WEITERBILDUNG KREMS, KREMS, Austria;</li>
           <li>6. BISHKEK STATE UNIVERSITY NAMED AFTER K KARASAEV, BISHKEK, Kyrgyzstan;</li>

@@ -16,18 +16,18 @@
 
     <section class="section project-description">
       <div class="responsive-container">
-        <h2 class="section-title">BRIEF DESCRIPTON OF THE PROJECT</h2>
+        <h2 class="section-title">BRIEF DESCRIPTION OF THE PROJECT</h2>
         <p class="description-text">
-The GDCAU – Green Deal for Central Asian Universities project brings together 13 universities from Germany, Slovakia, Austria, Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan to position higher education institutions as key drivers of technological, cultural, and social transformations within the European Green Deal framework. The project aims to foster sustainable development in Central Asia by integrating environmental, social, and governance (ESG) principles into university strategies, education, and business collaboration.
+The GDCAU project, funded under the ERASMUS+ Capacity Building in Higher Education program [Project Reference: 101179245] and coordinated by Constructor University Bremen, brings together 13 universities from Germany, Slovakia, Austria, Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan to advance EU Green Deal actions across Eurasia. The project situates universities as key drivers of sustainability, regeneration, and green innovation, emphasizing their potential to address global environmental challenges by advancing education and research in environmental sustainability and regeneration; fostering university-industry-NGO-government green partnerships; and serving as a hub of earthbound knowledge-sharing and training.
         </p>
       </div>
     </section>
 
     <section class="section participants">
       <div class="responsive-container">
-        <h2 class="section-title">PARTICIPANTS</h2>
+        <h2 class="section-title">PARTNERS</h2>
         <p class="participants-intro">
-          GDCAU proposes a partnership to make universities key drivers for technological, cultural, and societal
+          GDCAU is composed of three EU universities and ten Central Asian universities.
 		  
         </p>
         <div class="universities-grid">
@@ -54,12 +54,13 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
         <h2 class="section-title">LATEST NEWS AND EVENTS</h2>
         <div class="news-grid">
           <article 
-            v-for="(item, index) in news" 
+            v-for="(item, index) in latestNews" 
             :key="index" 
             class="news-card"
             @click="openNews(item)"
           >
-            <div class="news-date">{{ item.date }}</div>
+            <div class="news-date">{{ formatDate(item.date) }}</div> <!-- Добавлено форматирование -->
+
             <h3 class="news-title">{{ item.title }}</h3>
             <p class="news-excerpt">{{ item.excerpt }}</p>
           </article>
@@ -74,7 +75,7 @@ The GDCAU – Green Deal for Central Asian Universities project brings together 
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref,computed  } from 'vue'
 import { useRouter } from 'vue-router'
 import { news } from '../data/news'
 
@@ -82,7 +83,7 @@ import { news } from '../data/news'
 const router = useRouter()
 
 const openNews = (item) => {
-  router.push({ name: 'News And Events', params: { id: item.id } })
+  router.push(`/news/${item.id}`) // Передача через путь
 }
 const universities = ref([
   { name: 'University 1', logo: '/images/universitets/u1.png', url: 'https://tttu.edu.kz/ru/universitet/' },
@@ -90,23 +91,34 @@ const universities = ref([
   { name: 'University 3', logo: '/images/universitets/u3.png', url: 'https://kiut.uz/ru/' },
   { name: 'University 4', logo: '/images/universitets/u4.png', url: 'https://www.donau-uni.ac.at/de.html' },
   { name: 'University 5', logo: '/images/universitets/u5.png', url: 'https://etu.edu.kz/' },
-  { name: 'University 6', logo: '/images/universitets/u6.png', url: '#' },
+  { name: 'University 6', logo: '/images/universitets/u6.png', url: 'https://greeninvest.kz/en ' },
   { name: 'University 7', logo: '/images/universitets/u7.png', url: 'https://bhu.kg/' },
   { name: 'University 8', logo: '/images/universitets/u8.png', url: 'https://constructor.university/' },
-  { name: 'University 9', logo: '/images/universitets/u9.png', url: '#' },
-  { name: 'University 10', logo: '/images/universitets/u10.png', url: '#' },
-  { name: 'University 11', logo: '/images/universitets/u11.png', url: '#' },
-  { name: 'University 12', logo: '/images/universitets/u12.png', url: '#' },
-  { name: 'University 13', logo: '/images/universitets/u13.png', url: '#' },
-  { name: 'University 14', logo: '/images/universitets/u14.png', url: '#' },
+  { name: 'University 9', logo: '/images/universitets/u9.png', url: 'https://iogu.edu.tm/en ' },
+  { name: 'University 10', logo: '/images/universitets/u10.png', url: 'https://www.ucentralasia.org/ ' },
+  { name: 'University 11', logo: '/images/universitets/u11.png', url: 'https://www.uniag.sk/sk/uvodna-stranka ' },
+  { name: 'University 12', logo: '/images/universitets/u12.png', url: 'https://gfc.aifc.kz/en' },
+  { name: 'University 13', logo: '/images/universitets/u13.png', url: 'https://ihba.edu.tm/' },
+  { name: 'University 14', logo: '/images/universitets/u14.png', url: 'https://tiiame.uz/ ' },
 
 ])
+const latestNews = computed(() => {
+  return [...news]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 3)
+})
+
+// Добавляем функцию форматирования даты
+const formatDate = (dateString) => {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' }
+  return new Date(dateString).toLocaleDateString('en-US', options)
+}
 
 const objectives = ref([
-  'Strengthening institutional capacity of universities to develop and implement ESG-focused strategies.',
-  'Training specialists in environmental sustainability by updating educational programs and launching a joint masters program on the Green Deal.',
+  'Strengthening the institutional capacity of universities to develop and implement ESG-focused strategies.',
+  'Training specialists in environmental sustainability by updating educational programs and launching a joint masters program on the EU’s Green Deal.',
   'Enhancing university-business cooperation to support companies in implementing ESG principles.',
-  'Establishing an inter-university Green Deal Centre (GDCentre) to promote evidence-based education, research, innovation, and public engagement.',
+  'Establishing an inter-university Green Deal Center  to promote evidence-based education, research, innovation, and public engagement.',
 ])
 
 
