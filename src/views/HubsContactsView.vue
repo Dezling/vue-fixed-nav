@@ -46,7 +46,10 @@
 
       <div class="contact-group">
         <h3>Karaganda Industrial University (Temirtau, Kazakhstan)</h3>
-        <p class="hub-title">GDC Hub</p>
+        <p class="hub-title">
+        <a href="https://tttu.edu.kz/gdc/" class="hub-link">GDC Hub</a>
+
+        </p>
         
         <div class="contact-item">
           <p class="name">Anastassiya Chvanova</p>

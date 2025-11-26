@@ -2,6 +2,8 @@
   <nav class="navbar">
     <div class="navbar-content">
       <router-link to="/" class="logo">
+        <img src="/images/EN_Co-fundedbytheEU_RGB_POS.png" alt="Logo" class="logo-img2">
+
         <img src="../assets/main_logo.jpg" alt="Logo" class="logo-img">
       </router-link>
       
@@ -67,7 +69,9 @@ const toggleMenu = () => {
 .logo-img {
   height: 80px;
 }
-
+.logo-img2 {
+  height: 50px;
+}
 .nav-links {
   display: flex;
   gap: 2rem;

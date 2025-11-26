@@ -27,7 +27,7 @@
       <div class="footer-right">
         <div class="erasmus-block">
           <div class="erasmus-logo-footer">
-            <img src="/images/eu_52.png" alt="Erasmus+" class="erasmus-footer-img">
+            <img src="/images/EN_Co-fundedbytheEU_RGB_POS.png" alt="Erasmus+" class="erasmus-footer-img">
           </div>
           <div class="disclaimer-text">
             <p>Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.</p>
@@ -45,7 +45,7 @@ const socialMedia = ref([
   { name: 'Facebook', icon: '/images/social/facebook.png', link: 'https://www.facebook.com/share/18MHZ86n2o/?mibextid=wwXIfr' },
   { name: 'Telegram', icon: '/images/social/telegram.png', link: 'https://t.me/greendealcau' },
   { name: 'Instagram', icon: '/images/social/instagram.png', link: 'https://www.instagram.com/greendealcau?igsh=MTVmNmo4d3NoYzdqOA==' },
-  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://www.linkedin.com/in/green-deal-cau-64b62b365/' },
+  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://www.linkedin.com/in/green-deal-central-asian-universitetes-815633365?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
   { name: 'tiktok', icon: '/images/social/tttt.png', link: 'https://www.tiktok.com/@greendeal_cau?_t=ZM-8uF1ZqiwkuE&_r=1' },
 ])
 </script>

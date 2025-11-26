@@ -1,1 +1,0 @@
-import{_ as t,c as n,g as e,t as c,o as a}from"./index-CyccoHz8.js";const i={},r={class:"section"},d={class:"section-title"};function _(s,o){return a(),n("div",r,[e("h1",d,c(s.$route.name),1),o[0]||(o[0]=e("div",{class:"coming-soon"},[e("p",null,"🚧 COMING SOON 🚧")],-1))])}const m=t(i,[["render",_],["__scopeId","data-v-dbe9d8e3"]]);export{m as default};

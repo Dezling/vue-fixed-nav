@@ -1,6 +1,386 @@
 export const news = [
   {
-    id: 12, // Следующий по порядку id
+  id: 22,
+  title: "🌿💬 Green Debate Tournament 2025 | Empowering Youth for a Sustainable Future — Naryn Campus 💬🌿",
+  date: "2025-11-08",
+  author: "UCA",
+  images: [
+    "/images/news-covers/7Nov.jpg",
+    "/images/news-covers/7Nov1.jpg",
+    "/images/news-covers/7Nov2.jpg",
+    "/images/news-covers/7Nov3.jpg",
+    "/images/news-covers/7Nov4.jpg",
+    "/images/news-covers/7Nov5.jpg",
+    "/images/news-covers/7Nov6.jpg",
+    "/images/news-covers/7Nov7.jpg",
+  ],
+  content: `
+    <section>
+      <p>Last week, the <strong>Institute of Public Policy and Administration (UCA)</strong>, <strong>Naryn Campus (Kyrgyzstan)</strong>, hosted the <strong>Green Debate Tournament</strong> — a joint initiative of the <strong>Green Deal for Central Asian Universities (GDCAU)</strong>, <strong>UCA Debate Club – Naryn</strong>, and the <strong>UCA Green Community</strong>. 💬🌿</p>
+
+      <h3>🌱 Inspiring Dialogue in Three Languages</h3>
+      <p>Across two inspiring days, <strong>students</strong> and <strong>Naryn-based youth</strong> engaged in <strong>British Parliamentary debates</strong> on <strong>sustainability</strong>, <strong>climate change</strong>, and <strong>environmental governance</strong> — in <strong>English</strong>, <strong>Kyrgyz</strong>, and <strong>Russian</strong> languages. 🌍</p>
+
+      <h3>🏆 Highlights from the Finals & Community Events</h3>
+      <ul>
+        <li>🗣️ Multilingual debate rounds running in parallel classrooms</li>
+        <li>📝 Public Reflection Wall filled with ideas and commitments</li>
+        <li>🏅 Awards ceremony celebrating skill, teamwork, and civic leadership</li>
+      </ul>
+
+      <h3>💚 Empowering Youth and Building Awareness</h3>
+      <p>This event strengthened participants’ <strong>critical thinking</strong>, <strong>public speaking</strong>, and <strong>collaboration</strong> — while reaffirming <strong>UCA’s commitment</strong> to <strong>environmental awareness</strong> and <strong>youth leadership</strong> across <strong>Central Asia</strong>.</p>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“Through multilingual debates and open dialogue, young people in Naryn are shaping the sustainable future of Central Asia.”</em></p>
+      </blockquote>
+
+      <p>✨ Congratulations to all <strong>participants</strong>, <strong>judges</strong>, <strong>volunteers</strong>, and <strong>partners</strong> for making the <strong>Green Debate Tournament — Naryn</strong> a success. Let’s keep raising our voices for a <strong>greener</strong> and more <strong>sustainable future</strong>. 🌍💚</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#GreenDebates #UCA #GDCAU #NarynCampus #Sustainability #YouthLeadership #ClimateAction #MultilingualDebate #CentralAsia</em>
+      </p>
+    </section>
+  `,
+  excerpt: "The University of Central Asia’s Naryn Campus hosted the Green Debate Tournament 2025, uniting youth across three languages to discuss sustainability, climate change, and leadership for a greener future."
+},
+  {
+  id: 21,
+  title: "🤝 UCA Strengthens Ties with European Partners for Sustainable Development 🌍",
+  date: "2025-11-07",
+  author: "UCA",
+  images: [
+    "/images/news-covers/8Nov.jpg",
+    "/images/news-covers/8Nov1.jpg",
+    "/images/news-covers/8Nov2.jpg",
+  ],
+  content: `
+    <section>
+      <p>Colleagues from the <strong>University of Central Asia’s Institute of Public Policy and Administration (UCA IPPA)</strong> and the <strong>Mountain Societies Research Institute (MSRI)</strong> met with <strong>Dr. Reyna Zachary</strong> from <strong>Constructor University Bremen</strong> to explore new opportunities for <strong>European Development Funds</strong> supporting UCA’s ongoing and future research initiatives. 🤝🌍</p>
+
+      <h3>🎯 Focus on Sustainable and Inclusive Research</h3>
+      <p>The discussion focused on identifying <strong>potential funding pathways</strong> and <strong>strengthening partnerships</strong> with European institutions that share UCA’s commitment to <strong>interdisciplinary, community-based, and sustainable development research</strong>.</p>
+
+      <h3>🌿 Partnership Under the Green Deal for Central Asia Project</h3>
+      <p><strong>Dr. Reyna Zachary</strong> is UCA’s key partner within the <strong>Green Deal for Central Asia (GDCAU)</strong> project under the <strong>Erasmus Mundus</strong> programme, which promotes collaboration on <strong>sustainability</strong> and <strong>innovation</strong> across the region.</p>
+
+      <h3>💡 UCA’s Strategic Goals</h3>
+      <ul>
+        <li>🌐 Broaden access to <strong>European Development</strong> and <strong>research funding opportunities</strong>.</li>
+        <li>🤝 Foster stronger collaboration with <strong>European academic and research networks</strong>.</li>
+        <li>💡 Support innovative projects connecting <strong>social sciences</strong>, <strong>humanities</strong>, and <strong>environmental research</strong> in <strong>Central Asia</strong>.</li>
+      </ul>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“This meeting marks an important step toward expanding UCA’s engagement with European partners and building a stronger foundation for inclusive, impactful research collaborations.”</em></p>
+      </blockquote>
+
+      <p>✨ Through these efforts, UCA continues to advance its mission of fostering sustainable, inclusive, and globally connected research and education in Central Asia. 🌿</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#UCA #GDCAU #Sustainability #ResearchCollaboration #ErasmusMundus #EuropeanPartnerships #Innovation #CentralAsia</em>
+      </p>
+    </section>
+  `,
+  excerpt: "UCA’s IPPA and MSRI teams met with Dr. Reyna Zachary from Constructor University Bremen to explore new European funding opportunities and strengthen sustainable research partnerships under the Erasmus Mundus Green Deal for Central Asia project."
+},
+  {
+  id: 20,
+  title: "🌿 Visit of the Constructor University Representative within the Erasmus+ GDCAU Project",
+  date: "2025-10-22",
+  author: "TIIAME",
+  images: [
+    "/images/news-covers/22Oct.jpg",
+    "/images/news-covers/22Oct1.jpg",
+    "/images/news-covers/22Oct2.jpg",
+    "/images/news-covers/22Oct3.jpg",
+    "/images/news-covers/22Oct4.jpg",
+    "/images/news-covers/22Oct5.jpg",
+  ],
+  content: `
+    <section>
+      <p>On <strong>22 October 2025</strong>, <strong>Dr. Reyna Zachary</strong>, the coordinator of the <strong>Erasmus+ GDCAU — “Green Deal for Central Asia Universities”</strong> project from <strong>Constructor University (Bremen)</strong>, visited the <strong>TIIAME National Research University</strong>. 🌿</p>
+
+      <p>He was accompanied by the project’s local coordinator, <strong>Assoc. Prof. Sherzod Rakhmonov</strong>, and <strong>project manager Iqboljon Bozarov</strong>. 👥</p>
+
+      <h3>🔬 Exploring Scientific and Environmental Initiatives</h3>
+      <p>During the visit, Dr. Zachary toured the university’s <strong>laboratories</strong> and became acquainted with the activities of the <strong>UNESCO Chair on “Water Diplomacy, Water Resources Management and Environmental Protection.”</strong> 💧</p>
+
+      <h3>🌱 Visit to the Green Deal Center</h3>
+      <p>He also visited the <strong>Green Deal Center</strong>, established within the framework of the project, where he was introduced to the <strong>university’s history</strong>, <strong>academic activities</strong>, and <strong>ongoing sustainability initiatives</strong>.</p>
+
+      <h3>🤝 Strengthening Cooperation</h3>
+      <p>At the end of the visit, the parties discussed the project’s <strong>current progress</strong> 📊 and exchanged views on <strong>future cooperation</strong> and potential areas for joint development within the Erasmus+ GDCAU network.</p>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“The visit marked another step forward in strengthening international collaboration for sustainable education and research in Central Asia.”</em></p>
+      </blockquote>
+
+      <p>🔗 <a href="https://tiiame.uz/news?id=9225" target="_blank" style="color: #2e7d32; text-decoration: underline;">Read the original publication on TIIAME’s website</a></p>
+    </section>
+  `,
+  excerpt: "On October 22, 2025, Dr. Reyna Zachary from Constructor University visited TIIAME National Research University under the Erasmus+ GDCAU project, exploring the Green Deal Center and strengthening cooperation in sustainability and research."
+},
+  {
+  id: 19,
+  title: "🌿💬 Green Debate Tournament 2025 | Empowering Youth for a Sustainable Future 💬🌿",
+  date: "2025-10-12",
+  author: "UCA",
+  images: [
+    "/images/news-covers/11Oct.jpg",
+    "/images/news-covers/11Oct1.jpg",
+    "/images/news-covers/11Oct2.jpg",
+    "/images/news-covers/11Oct3.jpg",
+    "/images/news-covers/11Oct4.jpg",
+    "/images/news-covers/11Oct5.jpg",
+    "/images/news-covers/11Oct6.mp4",
+  ],
+  content: `
+    <section>
+      <p>On <strong>October 11–12, 2025</strong>, the <strong>University of Central Asia (UCA), Tajikistan, Khorog Campus</strong> hosted the <strong>first-ever Green Debate Tournament</strong> — a joint initiative by the <strong>Green Deal for Central Asian Universities (GDCAU)</strong>, <strong>UCA Debate Club</strong>, and <strong>UCA Green Community</strong>. 🌍💬</p>
+
+      <h3>🌱 Inspiring Dialogue for a Sustainable Future</h3>
+      <p>Over <strong>30 passionate participants</strong> — including students from <strong>UCA</strong> and <strong>American Space Khorog</strong> — came together to exchange ideas, challenge perspectives, and discuss key issues in <strong>sustainability</strong>, <strong>climate change</strong>, and <strong>environmental governance</strong> through the <strong>British Parliamentary debate format</strong>.</p>
+
+      <h3>🏆 Tournament Results</h3>
+      <ul>
+        <li>🥇 <strong>Champion:</strong> Team 04-en (UCA)</li>
+        <li>🥈 <strong>Runner-up:</strong> Team Ta Pit Kul (UCA)</li>
+        <li>🎖️ <strong>Best Speaker:</strong> Shohruza Soqieva</li>
+        <li>🏅 <strong>Best Judge:</strong> Muhiddin Shabonov</li>
+      </ul>
+
+      <h3>💚 Youth Empowerment Through Debate</h3>
+      <p>The event not only strengthened students’ <strong>critical thinking</strong> and <strong>communication skills</strong> but also showcased <strong>UCA’s dedication</strong> to promoting <strong>environmental awareness</strong> and <strong>youth leadership</strong> across Central Asia.</p>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“Through open dialogue and critical debate, we empower youth to lead the way toward a greener and more sustainable future.”</em></p>
+      </blockquote>
+
+      <p>✨ Congratulations to all <strong>participants</strong>, <strong>judges</strong>, and <strong>organizers</strong> for making this event a success! Let’s continue to raise our voices for a <strong>greener</strong> and more <strong>sustainable future</strong>. 🌍💚</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#GreenDebates #UCA #GDCAU #Sustainability #YouthEmpowerment #ClimateAction #DebateForChange #UCAKhorog</em>
+      </p>
+    </section>
+  `,
+  excerpt: "The University of Central Asia hosted the first-ever Green Debate Tournament in Khorog, Tajikistan, bringing together over 30 participants to discuss sustainability, climate change, and youth empowerment for a greener future."
+},
+  {
+  id: 18,
+  title: "🌿 Environmental Campaign in Ala-Archa: Students of Bishkek State University Promote Green Initiatives under Erasmus+ Project 🌍",
+  date: "2025-10-10",
+  author: "BSU",
+  images: [
+    "/images/news-covers/10Oct.jpeg",
+    "/images/news-covers/10Oct1.jpeg",
+  ],
+  content: `
+    <section>
+      <p><strong>Students of Bishkek State University (BSU)</strong> held an <strong>environmental campaign</strong> in <strong>Ala-Archa National Park</strong> as part of the <strong>Erasmus+ international project “Green Agreements in Universities of Central Asia.”</strong> 🌱</p>
+
+      <h3>🌍 Purpose and Mission</h3>
+      <p>The campaign aimed to <strong>promote careful treatment of nature</strong>, <strong>foster environmental awareness</strong>, and <strong>support the principles of sustainable development</strong>. 🌳♻️ Students and volunteers united to highlight the importance of individual responsibility toward the environment.</p>
+
+      <h3>🧤 Activities and Participation</h3>
+      <p>During the event, participants actively <strong>cleaned hiking trails of litter</strong> and <strong>engaged in discussions</strong> about <strong>eco-friendly habits</strong> and <strong>responsible environmental behavior</strong>. The initiative became a practical example of how small actions can create a meaningful impact on the preservation of nature. 💬🌿</p>
+
+      <h3>💚 A Step Toward a Greener Future</h3>
+      <p>The university expressed sincere gratitude to all participants and emphasized that <strong>joint efforts</strong> make it possible to achieve greater results in promoting environmental sustainability. Together, we can build a <strong>cleaner and greener Kyrgyzstan</strong>! 🇰🇬✨</p>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“Every small step toward protecting nature brings us closer to a sustainable future — together, we make a real difference.”</em></p>
+      </blockquote>
+    </section>
+  `,
+  excerpt: "Students of Bishkek State University organized an environmental campaign in Ala-Archa National Park under the Erasmus+ project, cleaning trails and promoting eco-friendly habits for a greener Kyrgyzstan."
+},
+
+  {
+  id: 17,
+  title: "🌿 Meeting at Bishkek State University Explores Joint Project on Sustainable Development and Ecological Ethnography",
+  date: "2025-10-09",
+  author: "BSU",
+  images: [
+    "/images/news-covers/9Oct.jpeg",
+    "/images/news-covers/9Oct1.jpeg",
+  ],
+  content: `
+    <section>
+      <p>On <strong>October 9, 2025</strong>, as part of the preparation for a new joint project on <strong>sustainable development</strong> and <strong>ecological ethnography</strong>, a meeting took place between the administration of <strong>K. Karasaev Bishkek State University (BSU)</strong> and <strong>Professor Zachary Rhein</strong>, a representative of the partner university <strong>Constructor Bremen (Germany)</strong>. 🌍🤝</p>
+
+      <h3>🌿 Exploring New Avenues of Cooperation</h3>
+      <p>During the meeting, the participants discussed future areas of collaboration within the framework of the <strong>Green Deal Center initiative</strong> and the upcoming <strong>grant application</strong>. The dialogue emphasized mutual academic exchange and joint research promoting environmental awareness and sustainable practices in Central Asia.</p>
+
+      <h3>🦅 Preserving Traditional Ecological Knowledge (TEK)</h3>
+      <p>Special attention was given to engaging with communities that preserve <strong>Traditional Ecological Knowledge (TEK)</strong> — including <strong>eagle hunters</strong>, <strong>herders</strong>, <strong>traditional healers</strong>, and <strong>bearers of oral traditions</strong>. The discussion also covered opportunities for <strong>field research</strong> and involving <strong>BSU students</strong> in ethnographic and environmental projects.</p>
+
+      <h3>🌏 Strengthening Scientific Partnerships</h3>
+      <p>The project aims to foster <strong>scientific partnerships</strong>, expand the <strong>international cooperation network</strong>, and strengthen <strong>BSU’s role</strong> as a research hub in the fields of <strong>ecology</strong>, <strong>culture</strong>, and <strong>sustainable development</strong> in Central Asia.</p>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“This meeting marked an important milestone in developing collaborative research that unites science, culture, and sustainability for the future of our region.”</em></p>
+      </blockquote>
+    </section>
+  `,
+  excerpt: "On October 9, 2025, Bishkek State University hosted a meeting with Constructor Bremen (Germany) to discuss a joint project on sustainable development and ecological ethnography within the Green Deal Center initiative."
+},
+  {
+    id: 16,
+    title: "🌿⚡ Green Marathon at KarIU! 🏃‍♂️🏃‍♀️",
+    date: "2025-09-27",
+    author: "KarIU",
+    images: [
+      "/images/news-covers/27Sep.jpeg",
+      "/images/news-covers/27Sep1.jpeg",
+      "/images/news-covers/27Sep2.jpeg",
+      "/images/news-covers/27Sep3.jpeg",
+      "/images/news-covers/27Sep4.jpeg",
+      "/images/news-covers/27Sep5.jpeg",
+      "/images/news-covers/27Sep6.jpeg",
+      "/images/news-covers/27Sep7.jpeg"
+    ],
+    content: `
+      <section>
+        <p>On <strong>September 27, 2025</strong>, the <strong>Departments of Physical Education and Energy</strong> at <strong>Karaganda Industrial University (KarIU)</strong> organized a large-scale student run under the motto <strong>“Energy in Motion”</strong>. 💚</p>
+
+        <h3>🏃‍♂️🏃‍♀️ A Symbol of Sustainability and Health</h3>
+        <p>This event became a powerful symbol of an <strong>active and healthy lifestyle</strong>, as well as the aspiration for a <strong>clean and sustainable future</strong>. 🌍✨ The marathon brought together students, faculty, and community members to promote physical fitness and environmental consciousness.</p>
+
+        <h3>🏅 Celebrating Achievements</h3>
+        <p>The fastest and most enduring participants were awarded <strong>medals and certificates</strong>, recognizing their dedication and spirit. 🏅📜 The event fostered a sense of camaraderie and inspired participants to embrace both personal and environmental goals.</p>
+
+        <h3>🌱 Alignment with GDCAU Erasmus+</h3>
+        <p>The marathon was held within the framework of the international project <strong>GREEN DEAL CENTRAL ASIAN UNIVERSITIES (GDCAU) Erasmus+</strong>, which aims to promote <strong>sustainable development</strong> and <strong>green energy</strong> within the university environment of Central Asia. 🌿✨</p>
+
+        <p>KarIU continues to champion <strong>sports</strong>, <strong>energy</strong>, and <strong>green initiatives</strong>, encouraging students to lead by example in building a sustainable future. 💪⚡🌱</p>
+
+        <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+          <p><em>“The Green Marathon energized our community, blending physical vitality with a commitment to a greener, healthier planet.”</em></p>
+        </blockquote>
+      </section>
+    `,
+    excerpt: "On September 27, 2025, KarIU’s Departments of Physical Education and Energy hosted the Green Marathon, promoting a healthy lifestyle and sustainable future under the GDCAU Erasmus+ project."
+  },
+  {
+    id: 15,
+    title: "🌍♻️ “Separate. Deliver. Recycle”: Motivational Lecture at Karaganda Industrial University",
+    date: "2025-09-24",
+    author: "KarIU",
+    images: [
+      "/images/news-covers/24Sep.jpeg",
+      "/images/news-covers/24Sep1.jpeg",
+      "/images/news-covers/24Sep2.jpeg",
+      "/images/news-covers/24Sep3.jpeg",
+      "/images/news-covers/24Sep4.jpeg",
+      "/images/news-covers/24Sep5.jpeg"
+    ],
+    content: `
+      <section>
+        <p>On <strong>September 24, 2025</strong>, as part of the national program <strong>“Taza Qazaqstan”</strong>, <strong>Karaganda Industrial University</strong> hosted a meeting between students and the popular motivational speaker <strong>Damir Karimov</strong>.</p>
+
+        <h3>♻️ Lecture Topic</h3>
+        <p>“Separate. Deliver. Recycle”</p>
+
+        <p>The lecture focused on <strong>effective waste management</strong> as a way to reduce losses and increase economic benefits. Special attention was given to <strong>eco-friendly habits</strong> that can be adopted in everyday life to not only reduce negative environmental impact but also save personal financial resources. The lecturer explained how proper waste management helps minimize costs and create new income opportunities through the collection and recycling of materials.</p>
+
+        <h3>🌱 Impact and Alignment</h3>
+        <p>The event contributed to fostering an <strong>environmentally conscious mindset</strong> among young people and stimulated their interest in <strong>ecological initiatives</strong>. The meeting was also aligned with the ideas and objectives of the international project <strong>GREEN DEAL CENTRAL ASIAN UNIVERSITIES (GDCAU) Erasmus+</strong>, aimed at promoting the <strong>green economy</strong> and <strong>sustainable development</strong> within the university environment of Central Asia.</p>
+
+        <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+          <p><em>“This lecture inspired students to rethink their daily habits and take actionable steps toward a more sustainable future.”</em></p>
+        </blockquote>
+      </section>
+    `,
+    excerpt: "On September 24, 2025, KarIU hosted a motivational lecture by Damir Karimov on waste management under the Taza Qazaqstan program, promoting eco-friendly habits and aligning with GDCAU Erasmus+ objectives."
+  },
+    {
+    id: 14,
+    title: "🌍⚡ Erasmus+: A Step Towards an Energy-Efficient Future!",
+    date: "2025-09-17",
+    author: "KarIU",
+    images: [
+      "/images/news-covers/17Sep.jpeg",
+      "/images/news-covers/17Sep1.jpeg",
+      "/images/news-covers/17Sep2.jpeg",
+      "/images/news-covers/17Sep3.jpeg",
+      "/images/news-covers/17Sep4.jpeg"
+    ],
+    content: `
+      <section>
+        <p>On <strong>September 17, 2025</strong>, <strong>Karaganda Industrial University</strong> hosted an online lecture organized in cooperation with <strong>JSC “Institute of Power Engineering and Energy Saving Development” (Kazakhenergoexpertiza)</strong> under the <strong>Ministry of Industry and Construction of the Republic of Kazakhstan</strong>.</p>
+
+        <h3>🔹 Lecture Topic</h3>
+        <p>“Raising Awareness and Developing the Field of Energy Saving”</p>
+
+        <h3>👩‍🎓👨‍🎓 Participants</h3>
+        <p>Representatives of the <strong>Erasmus+ project</strong> who participated in the event:</p>
+        <ul>
+          <li>A.O. Chvanova</li>
+          <li>S.N. Kamarova</li>
+          <li>O.N. Onishchenko</li>
+          <li>T.I. Siverskaya</li>
+          <li>V.M. Druzhinin</li>
+        </ul>
+
+        <p>Thanks to international cooperation within the <strong>Erasmus+ framework</strong>, students and faculty gain the opportunity to adopt <strong>best practices in energy saving</strong>, share experiences, and foster a <strong>responsible attitude toward resource use</strong>.</p>
+
+        <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+          <p><em>“This lecture is a significant step toward building a sustainable future by equipping our community with the knowledge and tools to prioritize energy efficiency.”</em></p>
+        </blockquote>
+      </section>
+    `,
+    excerpt: "On September 17, 2025, KarIU hosted an online lecture with Kazakhenergoexpertiza, focusing on energy saving and Erasmus+ collaboration to promote sustainable practices."
+  },
+   {
+    id: 13, // следующий по порядку id
+    title: "🔋 Training on Renewable PtX for University Lecturers in Almaty 🌍",
+    date: "2025-08-29",
+    author: "KarIU, KIMYO",
+    images: [
+      "/images/news-covers/5Sep.jpeg",
+      "/images/news-covers/5Sep1.jpeg",
+      "/images/news-covers/5Sep2.jpeg",
+      "/images/news-covers/5Sep3.jpeg",
+      "/images/news-covers/5Sep4.jpeg"
+
+
+    ],
+    content: `
+  <section>
+    <p>From <strong>August 25 to 29, 2025</strong>, a training program on <strong>renewable PtX (Power-to-X) technologies</strong> for university lecturers from Central Asia was held at the <strong>Kazakh-German University (DKU)</strong> in Almaty, Kazakhstan.</p>
+
+    <h3>📌 Organizers</h3>
+    <ul>
+      <li><strong>International PtX Hub</strong></li>
+      <li><strong>Hydrogen Diplomacy Office (GIZ)</strong> in Astana</li>
+      <li><strong>Kazakh-German University (DKU)</strong></li>
+    </ul>
+
+    <p>The participants enhanced their knowledge in the fields of <strong>hydrogen energy</strong>, <strong>sustainable energy technologies</strong>, and their integration into <strong>educational programs</strong>. Special attention was given to incorporating <strong>PtX technologies</strong> into university curricula and preparing qualified specialists for the <strong>green economy of the future</strong>.</p>
+
+    <h3>👩‍🏫 Participants</h3>
+    <p>
+      From <strong>Karaganda Industrial University (Kazakhstan)</strong>, the training was attended by <strong>Saule Nurtazaevna Kamarova</strong>, Head of the Department of Energy.  
+      From <strong>KIMYO Tashkent Kimyo International University</strong>, <strong>Kamaliddin Abdivakhidov</strong>, Head of the Department of Energy and Applied Sciences, also participated.
+    </p>
+
+    <h3>🔗 Alignment with Erasmus+</h3>
+    <p>This training is closely aligned with the objectives of <strong>Erasmus+ programs</strong>, which aim to promote <strong>academic mobility</strong>, <strong>faculty professional development</strong>, and the creation of <strong>joint educational modules</strong>. Such initiatives enable Central Asian universities to integrate modern energy approaches into teaching and strengthen <strong>international cooperation</strong>.</p>
+
+    <h3>📖 Outcome</h3>
+    <p>Participants not only broadened their competencies in <strong>hydrogen energy</strong> and <strong>PtX technologies</strong> but also strengthened <strong>academic networking</strong> and collaborative ties.</p>
+
+    <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+      <p><em>"The training in Almaty marked a significant step toward the development of international scientific and educational cooperation and the promotion of sustainable energy transition initiatives."</em></p>
+    </blockquote>
+  </section>
+  `,
+    excerpt:
+      "From August 25–29, 2025, DKU Almaty hosted training on renewable PtX technologies for university lecturers, strengthening expertise in hydrogen energy, academic mobility, and international cooperation across Central Asia."
+  },
+  {
+    id: 12, 
     title: "🌱 Environmental Quest as part of the GDCAU project! 🌍",
     date: "2025-07-03",
     author: "KarIU",

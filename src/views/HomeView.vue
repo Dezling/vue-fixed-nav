@@ -78,7 +78,13 @@ The GDCAU project, funded under the ERASMUS+ Capacity Building in Higher Educati
 import { ref,computed  } from 'vue'
 import { useRouter } from 'vue-router'
 import { news } from '../data/news'
+import { universitiesAll } from '../data/universitetsAll'
 
+const navigateToEsgProfile = (university) => {
+  if (university.active) {
+    router.push(`/esg-profiles/${university.id}`)
+  }
+}
 
 const router = useRouter()
 
@@ -126,7 +132,7 @@ const socialMedia = ref([
   { name: 'Facebook', icon: '/images/social/facebook.png', link: '#' },
   { name: 'Telegram', icon: '/images/social/telegram.png', link: 'https://t.me/greendealcau' },
   { name: 'Instagram', icon: '/images/social/instagram.png', link: 'https://www.instagram.com/greendealcau?igsh=MTVmNmo4d3NoYzdqOA==' },
-  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://t.me/greendealcau' },
+  { name: 'linkedin', icon: '/images/social/linkedin.png', link: 'https://www.linkedin.com/in/green-deal-central-asian-universitetes-815633365?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
   { name: 'tiktok', icon: '/images/social/tttt.png', link: 'https://www.tiktok.com/@greendeal_cau?_t=ZM-8uF1ZqiwkuE&_r=1' },
 
 ])

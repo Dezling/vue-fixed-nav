@@ -7,11 +7,12 @@ export const routes = [
   { path: '/news', name: 'News & Events', component: () => import('../views/NewsView.vue') }, // Новый маршрут для списка
   { path: '/contact', name: '', component: () => import('../views/ContactView.vue') },
   { path: '/green-deal-center', name: 'Green Deal Center', component: () => import('../views/GreenDealCenterView.vue') },
-  // { path: '/news', name: 'News & Events', component: () => import('../views/NewsView.vue') }, // Новый маршрут для списка
+  { path: '/results', name: 'Results', component: () => import('../views/ResultsView.vue') }, // Новый маршрут для списка
   { path: '/news/:id', name: '', component: () => import('../views/NewsView.vue'), props: true },
   { path: '/educational-resources', name: '', component: () => import('../views/ComingSoonView.vue') },
   { path: '/publications', name: '', component: () => import('../views/ComingSoonView.vue') },
   { path: '/hubs-contacts', name: '', component: () => import('../views/HubsContactsView.vue') },
+  { path: '/results/esg-profiles/:universityId', name: '', component: () => import('../views/UniversityProfileView.vue'), props: true }
 ]
 import { onMounted, ref } from 'vue'
 
