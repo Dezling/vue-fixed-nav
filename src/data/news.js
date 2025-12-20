@@ -1,5 +1,229 @@
 export const news = [
   {
+  id: 27,
+  title: "🌱 Implementation of the Sustainable Development Goals in Education Continues under the ERASMUS+ GDCAU Project",
+  date: "2025-12-04",
+  author: "TIIAME",
+  images: [
+    "/images/news-covers/4Dec.jpg",
+    "/images/news-covers/4Dec1.jpg",
+    "/images/news-covers/4Dec2.jpg",
+    "/images/news-covers/4Dec3.jpg",
+    "/images/news-covers/4Dec4.jpg",
+    "/images/news-covers/4Dec5.jpg"
+  ],
+  content: `
+    <section>
+      <p>On December 4, the <strong>“Toshkent International House” Academic Lyceum</strong> under <strong>TIIAME National Research University</strong> hosted the next training seminar organized within the <strong>ERASMUS+ GDCAU</strong> project. 🌱</p>
+
+      <p>The workshop was conducted by <strong>D. Shavqidinova</strong>, Senior Lecturer of the Department of Management and Tourism, on the topic: <strong>“Integrating Sustainable Development Goals into Education.”</strong> 👩‍🏫</p>
+
+      <h3>👥 Engaging Educators in SDG Integration</h3>
+      <p>Fifteen teachers from the academic lyceum participated in the seminar, gaining valuable insights into the importance and relevance of the <strong>Sustainable Development Goals (SDGs)</strong>. Participants explored practical ways to:</p>
+
+      <ul>
+        <li>🌍 incorporate SDG concepts into the learning process,</li>
+        <li>🎓 enhance students’ awareness,</li>
+        <li>♻️ promote resource efficiency,</li>
+        <li>🌿 strengthen ecological literacy,</li>
+        <li>🤝 foster a fair and sustainable society through education.</li>
+      </ul>
+
+      <h3>💬 Interactive Format</h3>
+      <p>The seminar included <strong>lectures, discussions, and interactive activities</strong> that encouraged collaboration and idea-sharing among teachers.</p>
+
+      <h3>✨ Commitment to Action</h3>
+      <p>By the end of the event, educators expressed their intention to <strong>apply the newly acquired knowledge</strong> in their subjects and to actively integrate <strong>SDG-centered approaches</strong> into their teaching practices.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#SDGs #SustainableDevelopment #Education #GDCAU #ErasmusPlus #TIIAME #EcoLiteracy #GreenEducation</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "Teachers of the Toshkent International House Academic Lyceum took part in a GDCAU training seminar on integrating Sustainable Development Goals into education, gaining practical tools to promote ecological literacy and sustainability."
+  },
+  {
+  id: 26,
+  title: "⚡ Electric Quiz: Energy of Knowledge and the Drive of Ideas!",
+  date: "2025-11-28",
+  author: "KarIU",
+  images: [
+    "/images/news-covers/28Nov.jpeg",
+    "/images/news-covers/28Nov1.jpeg",
+    "/images/news-covers/28Nov2.jpeg",
+    "/images/news-covers/28Nov3.jpeg",
+    "/images/news-covers/28Nov4.jpeg",
+    "/images/news-covers/28Nov5.jpeg",
+    "/images/news-covers/28Nov6.jpeg"
+  ],
+  content: `
+    <section>
+      <p>The intellectual contest <strong>“Electric Quiz”</strong> became a true celebration of knowledge, energy, and creative thinking! ⚡</p>
+
+      <p>As part of the <strong>methodical week of the Department of Energy</strong>, the event brought together future power engineers from <strong>KarIU</strong> and ambitious students from the <strong>College of Fuel and Energy Complex</strong>.</p>
+
+      <h3>🤝 Energy of Unity and Teamwork</h3>
+      <p>Participants demonstrated impressive <strong>erudition</strong>, <strong>quick thinking</strong>, and strong <strong>team spirit</strong>, showing what the new generation of energy professionals is capable of.</p>
+
+      <h3>🎓 Awards that Symbolize Growth</h3>
+      <p>The culmination of the tournament was the <strong>ceremonial awarding of diplomas</strong> — not as a victory over competitors, but as a victory over personal limits. Each participant took a confident step toward <strong>professional growth</strong>, <strong>self-belief</strong>, and <strong>future achievements</strong>.</p>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“You have proven that knowledge can sound louder than turbines, and ideas can shine brighter than an electric arc.”</em></p>
+      </blockquote>
+
+      <p>👏 We express sincere gratitude to all participants. Your drive, curiosity, and ambition are what move Kazakhstan’s <strong>energy transition</strong> forward today.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#ElectricQuiz #Energy #KarIU #YouthEnergy #KnowledgePower #SustainableEnergy #EnergyTransition</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "KarIU hosted the 'Electric Quiz' intellectual tournament, uniting future power engineers and celebrating knowledge, teamwork, and the spirit of innovation driving Kazakhstan’s energy transition."
+  },
+  {
+  id: 25,
+  title: "🤖 Students Participate in Internal Stage of “AI in Sustainable Development” Competition",
+  date: "2025-11-27",
+  author: "TIIAME",
+  images: [
+    "/images/news-covers/27Nov.jpg"
+  ],
+  content: `
+    <section>
+      <p>The internal selection round of the <strong>“Artificial Intelligence (AI) in Sustainable Development”</strong> student competition, announced by <strong>Eurasian Technological University</strong> (Almaty, Kazakhstan), took place at the <strong>Green Deal Center</strong> of <strong>TIIAME National Research University</strong>. 🤖🌱</p>
+
+      <p>During the event, <strong>GDCAU project coordinator Sherzod Rakhmonov</strong> and <strong>project manager Iqbojon Bozarov</strong> reviewed student presentations, explored their scientific ideas and technological approaches, and conducted a Q&A session.</p>
+
+      <p>Students showcased a wide range of <strong>scientific</strong> and <strong>innovative projects</strong> integrating <strong>AI</strong> with <strong>sustainable development</strong> challenges and solutions.</p>
+
+      <h3>📌 Next Stages</h3>
+      <ul>
+        <li>🏅 Teams that pass the initial selection will be evaluated by <strong>international experts</strong> in the next round.</li>
+        <li>🌍 The <strong>top-scoring team</strong> will present their project at the <strong>final event in Almaty</strong> in <strong>April 2026</strong>.</li>
+      </ul>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>“Through this initiative, the Green Deal Center continues to support student research, foster creative thinking, and promote international-level potential.”</em></p>
+      </blockquote>
+
+      <p style="margin-top: 1rem;">
+        <em>#AI #SustainableDevelopment #GDCAU #TIIAME #StudentCompetition #Innovation #GreenDealCenter</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "The Green Deal Center at TIIAME hosted the internal stage of the 'AI in Sustainable Development' competition, where students presented innovative AI-driven projects before advancing to the international evaluation stage."
+  },
+  {
+  id: 24,
+  title: "⚡ The Future of Energy Starts Here: NextGen Energy Training at Karaganda Industrial University",
+  date: "2025-11-26",
+  author: "KarIU",
+  images: [
+    "/images/news-covers/26Nov.jpeg",
+    "/images/news-covers/26Nov1.jpeg",
+    "/images/news-covers/26Nov2.jpeg",
+    "/images/news-covers/26Nov3.jpeg",
+    "/images/news-covers/26Nov4.jpeg"
+  ],
+  content: `
+    <section>
+      <p>On <strong>November 26, 2025</strong>, Karaganda Industrial University hosted the training <strong>“NextGen Energy — New Generation Energy”</strong>. The key expert and speaker of the event was <strong>Saule Nurtazaevna Kamarova, PhD</strong> — Associate Professor of the Department of Energy, researcher in the field of the global energy transition, and mentor to young engineers. ⚡🎓</p>
+
+      <h3>🎯 Purpose of the Training</h3>
+      <p>The goal of the training was not only to discuss the <strong>future of the energy sector</strong>, but also to inspire participants to see themselves as active contributors to the <strong>new energy transformation</strong>. During the session, participants had the opportunity to:</p>
+      <ul>
+        <li>🌍 Master global and national <strong>energy trends</strong></li>
+        <li>🌱 Explore <strong>green</strong> and <strong>low-carbon technologies</strong></li>
+        <li>👥 Understand the <strong>role of youth</strong> in Kazakhstan’s energy transition</li>
+        <li>🚀 Learn about the <strong>NextGen Energy project</strong> at the university</li>
+        <li>🎓 Discover new horizons for <strong>professional development</strong></li>
+      </ul>
+
+      <h3>📌 Key Trends Discussed</h3>
+      <ul>
+        <li>☀️ Renewable energy as the <strong>new foundation</strong> of power generation</li>
+        <li>🤖 Digitalization and automation of <strong>energy facilities</strong></li>
+        <li>🔌 Electrification of <strong>transport</strong> and <strong>industry</strong></li>
+        <li>🚚 Hydrogen energy prospects</li>
+        <li>🔋 Development of <strong>smart grids</strong> and Smart Grid technologies</li>
+        <li>🧠 New engineering competencies: <strong>digital twins</strong>, <strong>energy audit</strong>, and <strong>systems thinking</strong></li>
+      </ul>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>"NextGen Energy empowers young specialists to become leaders of the future energy industry — smart, green, and innovative."</em></p>
+      </blockquote>
+
+      <p>✨ This training became an important step in strengthening students’ competencies and promoting a forward-looking vision for Kazakhstan’s energy future.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#NextGenEnergy #KarIU #EnergyTransition #GreenTechnologies #SmartGrid #Sustainability #YouthInEnergy #FutureEngineering</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "KarIU hosted the NextGen Energy training led by Dr. Saule Kamarova, focusing on global energy trends, green technologies, hydrogen, digitalization, and the role of youth in Kazakhstan’s energy transition."
+  },
+  {
+  id: 23,
+  title: "🌿 Green Deal Center Launched at KarIU as Part of Erasmus+ Project to Strengthen Sustainability and International Cooperation",
+  date: "2025-11-25",
+  author: "KarIU",
+  images: [
+    "/images/news-covers/25Nov.jpeg",
+    "/images/news-covers/25Nov1.jpeg",
+    "/images/news-covers/25Nov2.jpeg",
+    "/images/news-covers/25Nov3.jpeg",
+    "/images/news-covers/25Nov4.jpeg",
+    "/images/news-covers/25Nov5.jpeg",
+    "/images/news-covers/25Nov6.jpeg"
+  ],
+  content: `
+    <section>
+      <p>On <strong>November 25</strong>, the <strong>Green Deal Center (GDC)</strong> was officially opened at <strong>Karaganda Industrial University (KarIU)</strong> as part of the <strong>Erasmus+</strong> initiative aimed at promoting <strong>sustainability</strong>, <strong>green transformation</strong>, and <strong>international cooperation</strong>. 🌿🤝</p>
+
+      <h3>📘 Purpose of the Green Deal Center</h3>
+      <p>The newly established Center is designed to support and accelerate the university’s and region’s transition toward <strong>sustainable development</strong>. Its key goals include:</p>
+      <ul>
+        <li>📗 Updating educational programs in sustainability and environmental governance</li>
+        <li>📊 Improving universities’ <strong>ESG indicators</strong></li>
+        <li>🤝 Enhancing collaboration between <strong>universities</strong>, <strong>businesses</strong>, and <strong>public organizations</strong></li>
+      </ul>
+
+      <h3>🌍 A Platform for International Dialogue</h3>
+      <p>The GDC will serve as a hub for:</p>
+      <ul>
+        <li>🌐 Experience exchange between <strong>Central Asian countries</strong> and the <strong>European Union</strong></li>
+        <li>🌿 Promoting environmental and green initiatives</li>
+        <li>💬 Supporting interdisciplinary dialogue across academia, industry, and civil society</li>
+      </ul>
+
+      <h3>🔬 Practical Implementation</h3>
+      <p>The Center will focus on launching and supporting:</p>
+      <ul>
+        <li>🎓 Educational and scientific research projects</li>
+        <li>🏭 Assessments of <strong>environmental sustainability</strong> of enterprises</li>
+        <li>💡 Tools and initiatives for transitioning to a <strong>green economy</strong></li>
+      </ul>
+
+      <blockquote style="margin: 1.5rem 0; padding: 1rem; border-left: 4px solid #4CAF50; background-color: #f0f8f4;">
+        <p><em>"The launch of the Green Deal Center marks a significant step toward strengthening environmental culture and expanding international academic cooperation."</em></p>
+      </blockquote>
+
+      <p>✨ The opening of the GDC highlights KarIU’s commitment to fostering <strong>sustainability</strong>, <strong>innovation</strong>, and <strong>global collaboration</strong> for the benefit of future generations.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#GreenDealCenter #KarIU #ErasmusPlus #Sustainability #GreenEconomy #EnvironmentalCulture #InternationalCooperation #CentralAsia</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "KarIU has launched the Green Deal Center under the Erasmus+ project to enhance sustainability, ESG performance, environmental culture, and international cooperation across Central Asia."
+  },
+  {
   id: 22,
   title: "🌿💬 Green Debate Tournament 2025 | Empowering Youth for a Sustainable Future — Naryn Campus 💬🌿",
   date: "2025-11-08",
