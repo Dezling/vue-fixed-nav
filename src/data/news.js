@@ -1,5 +1,157 @@
 export const news = [
   {
+  id: 31,
+  title: "🌍 GDCAU Project Presented at the Erasmus+ 2025 National Information Day",
+  date: "2025-12-12",
+  author: "TIIAME",
+  images: [
+    "/images/news-covers/gdcau-erasmus1.jpg",
+    "/images/news-covers/gdcau-erasmus2.jpg",
+    "/images/news-covers/gdcau-erasmus3.jpg"
+  ],
+  content: `
+    <section>
+      <p>During the <strong>Erasmus+ 2025 National Information Day</strong> 📅, a dedicated session was organized to introduce the <strong>GDCAU (Green Deal for Central Asia Universities)</strong> project 🌱.</p>
+
+      <p>At the event, the project manager of <strong>TIIAME National Research University</strong>, <strong>Iqboljon Bozarov</strong> 👨‍💼, delivered a detailed presentation outlining the project’s <strong>objectives</strong> 🎯 and its <strong>key strategic directions</strong> 🔑.</p>
+
+      <h3>📊 Project Management and Reporting</h3>
+      <p>In his presentation, he highlighted <strong>effective project management strategies</strong> 📈, shared practical experience in overcoming <strong>unexpected challenges</strong> ⚙️, and emphasized the importance of <strong>accurate documentation and proper reporting</strong> 🗂️✅.</p>
+
+      <p>Participants also received useful recommendations on <strong>tracking deadlines</strong> ⏰ and maintaining <strong>well-structured project records</strong> 📝 to ensure the successful implementation of international initiatives.</p>
+
+      <h3>🛠️ Practical Masterclass</h3>
+      <p>As part of the event 💻, <strong>Iqboljon Bozarov</strong> conducted a practical <strong>masterclass</strong> on planning weekly tasks using digital tools such as <strong>Zoom</strong>, <strong>Google Calendar</strong>, and <strong>Gmail</strong> 🌐.</p>
+
+      <p>The session equipped participants with valuable skills in <strong>time management</strong> ⏳, <strong>workflow organization</strong> 🧩, and <strong>effective remote collaboration</strong> 🤝, contributing to the successful execution of international projects 🌍✨.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#GDCAU #ErasmusPlus #TIIAME #ProjectManagement #InternationalProjects #GreenDeal #TimeManagement</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "The GDCAU project was presented at the Erasmus+ 2025 National Information Day, highlighting its goals, management strategies, and a practical masterclass on digital tools for effective project coordination."
+  },
+  {
+  id: 30,
+  title: "🏔️ On the International Mountain Day, BSU Discussed the Protection of Mountain Ecosystems 🌿",
+  date: "2025-12-11",
+  author: "BSU",
+  images: [
+    "/images/news-covers/mountain1.jpeg",
+    "/images/news-covers/mountain2.jpeg",
+    "/images/news-covers/mountain3.jpeg",
+    "/images/news-covers/mountain4.jpeg"
+  ],
+  content: `
+    <section>
+      <p>On <strong>December 11</strong>, in honor of <strong>International Mountain Day</strong> 🌍, the <strong>Faculty of Ecology and Management</strong> at <strong>BSU</strong> organized a roundtable discussion titled <strong>“Protection of Mountain Ecosystems — for the Sustainable Development of Kyrgyzstan”</strong>. 🏔️🌱🇰🇬</p>
+
+      <p>The event brought together specialists from the <strong>Central Asian Center for Earth Studies</strong> 🧭, representatives of the <strong>Kyrgyz-German Organization for the Protection of Natural Resources</strong> 🇩🇪🇰🇬, as well as the faculty’s professors and teaching staff 👩‍🏫👨‍🏫.</p>
+
+      <h3>💬 Dialogue on Sustainability</h3>
+      <p>During the roundtable, students were presented with <strong>informative and analytical reports</strong> 📊 focusing on:</p>
+
+      <ul>
+        <li>🏞️ conservation of mountain ecosystems</li>
+        <li>♻️ sustainable use of natural resources</li>
+        <li>⚠️ environmental safety and ecological risks</li>
+      </ul>
+
+      <p>The presentations were followed by <strong>active discussions</strong> and an <strong>exchange of ideas</strong> 🤝💡, encouraging students to think critically about environmental challenges and sustainable development strategies.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#InternationalMountainDay #BSU #MountainEcosystems #SustainableDevelopment #Ecology #EnvironmentalSafety #CentralAsia</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "On International Mountain Day, BSU hosted a roundtable discussion on protecting mountain ecosystems, bringing together experts, faculty members, and students to discuss sustainability and environmental safety."
+  },{
+  id: 29,
+  title: "🌱 Training on Sustainable Education at KarIU within the Erasmus+ GDCAU Project",
+  date: "2025-12-10",
+  author: "KarIU",
+  images: [
+    "/images/news-covers/kariu-training1.jpeg",
+    "/images/news-covers/kariu-training2.jpeg",
+    "/images/news-covers/kariu-training3.jpeg",
+    "/images/news-covers/kariu-training4.jpeg",
+    "/images/news-covers/kariu-training5.jpeg",
+    "/images/news-covers/kariu-training6.jpeg",
+    "/images/news-covers/kariu-training7.jpeg"
+  ],
+  content: `
+    <section>
+      <p>On <strong>December 9–10</strong>, <strong>Karaganda Industrial University (KarIU)</strong> hosted a two-day training session within the framework of the <strong>Erasmus+ GDCAU</strong> project titled <strong>“Training of Trainers: Updating Courses Based on Sustainable Education”</strong>. 🌱📚</p>
+
+      <p>The training aimed to <strong>modernize course syllabi</strong> by integrating the core <strong>principles of sustainable development</strong> into higher education programs.</p>
+
+      <p>The sessions were delivered by senior experts <strong>G.S. Dairbekova</strong> and <strong>B.A. Zhautikov</strong> 👩‍🏫👨‍🏫. In total, <strong>43 faculty members</strong> of the university participated in the training.</p>
+
+      <h3>🌍 Key Elements of Sustainable Education</h3>
+      <ul>
+        <li>🌍 systems and interdisciplinary thinking</li>
+        <li>🔍 a multi-perspective approach to complex issues</li>
+        <li>🤝 intercultural understanding</li>
+        <li>⏳ responsibility towards future generations</li>
+        <li>💡 values-based education and working with complexity</li>
+      </ul>
+
+      <h3>📚 Practice-Oriented Learning</h3>
+      <p>Faculty members worked with <strong>real-life cases</strong>, explored ways to integrate <strong>environmental, social, and economic aspects</strong> into teaching, and mastered <strong>interactive learning methods</strong> such as simulations, role-playing, and practical exercises.</p>
+
+      <p>These approaches help not only to transfer knowledge, but also to <strong>foster sustainability values</strong> among students.</p>
+
+      <h3>🧩 Integrating SDGs into Academic Programs</h3>
+      <p>Through <strong>group work</strong>, participants learned to identify the interconnections between <strong>environmental, social, and economic dimensions</strong> and to integrate the <strong>Sustainable Development Goals (SDGs)</strong> into academic curricula.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#GDCAU #ErasmusPlus #KarIU #SustainableEducation #SDGs #FacultyDevelopment #GreenSkills</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "KarIU hosted a two-day Erasmus+ GDCAU training focused on updating courses through sustainable education principles, engaging 43 faculty members in interactive and practice-oriented learning."
+  },
+  {
+  id: 28,
+  title: "🌱 Q&A Session with “Eco-Jamoa” at the Green Deal Center",
+  date: "2025-12-09",
+  author: "TIIAME",
+  images: [
+    "/images/news-covers/eco-jamoa1.jpg",
+    "/images/news-covers/eco-jamoa2.jpg",
+    "/images/news-covers/eco-jamoa3.jpg",
+    "/images/news-covers/eco-jamoa4.jpg",
+    "/images/news-covers/eco-jamoa5.jpg"
+  ],
+  content: `
+    <section>
+      <p>A <strong>Q&A-style meeting</strong> dedicated to environmental topics was held at the <strong>Green Deal Center</strong> of <strong>TIIAME National Research University</strong>. 🌱🌍</p>
+
+      <p>The event featured the leader of the <strong>“Eco-Jamoa” environmental club</strong>, <strong>Javokhir Umurzokov</strong>, together with active members of the team. 🤝♻️</p>
+
+      <p>During the meeting, <strong>GDCAU project manager I. Bozarov</strong> 👨‍🏫 presented students with a detailed overview of the Center’s <strong>opportunities</strong>, its <strong>strategic goals</strong>, and <strong>future development directions</strong>. 🚀🎯</p>
+
+      <h3>🌍 Interactive Ecological Dialogue</h3>
+      <p>The central part of the event was an engaging <strong>ecological discussion</strong> followed by a lively <strong>Q&A session</strong>. Students actively exchanged opinions 💬, proposed creative ideas 🎨🧠, and discussed innovative approaches to solving modern environmental challenges.</p>
+
+      <p>This open dialogue contributed to strengthening <strong>environmental awareness</strong> 🌱 among young people and inspired them to take an active role in sustainability initiatives.</p>
+
+      <h3>🏅 Recognition and Motivation</h3>
+      <p>At the end of the event 🎁, the most active participants received <strong>commemorative gifts</strong> from <strong>GDCAU project coordinator Sh. Rakhmonov</strong>. This recognition serves as strong motivation 💪 for students to further engage in environmental and green initiatives 🌳🌿.</p>
+
+      <p style="margin-top: 1rem;">
+        <em>#EcoJamoa #GreenDealCenter #GDCAU #TIIAME #EnvironmentalAwareness #YouthForSustainability #GreenInitiatives</em>
+      </p>
+    </section>
+  `,
+  excerpt:
+    "A Q&A session with the Eco-Jamoa club was held at the Green Deal Center of TIIAME, engaging students in ecological dialogue, sustainability discussions, and motivating youth to participate in green initiatives."
+  },
+  {
   id: 27,
   title: "🌱 Implementation of the Sustainable Development Goals in Education Continues under the ERASMUS+ GDCAU Project",
   date: "2025-12-04",
